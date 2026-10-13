@@ -1,12 +1,21 @@
-# Portfólio POO — Willian Ferreira
+# Portfólio — Willian Ferreira
 
-Abra `index.html` no navegador ou execute com Live Server.
+Portfólio responsivo em HTML5, CSS3 e JavaScript (POO), com tema preto.
 
-Estrutura:
-- `index.html`: semântica e conteúdo.
-- `css/styles.css`: tema preto, layout responsivo e estilos de interação.
-- `js/main.js`: classes `Navigation`, `ProjectFilter`, `ScrollReveal`, `BackToTop` e `PortfolioApp`.
+## Como executar
+Abra `index.html` no navegador ou use o Live Server do VS Code. Não é necessário instalar dependências.
 
-Recursos: menu mobile, indicação da seção atual, filtros por categoria, animações ao rolar e botão de voltar ao topo. O conteúdo e os links permanecem acessíveis mesmo sem JavaScript.
+## Estrutura
+- `index.html`: conteúdo e seções semânticas
+- `css/styles.css`: estilos, responsividade e estados visuais
+- `js/main.js`: classes `Navigation`, `ProjectFilter`, `ScrollReveal`, `BackToTop` e `PortfolioApp`
+- `imagens/`: favicons, incluindo `.ico` e versões PNG
 
-IDs exigidos pelo freeCodeCamp foram mantidos. Em plataformas que usam editores separados, ajuste os caminhos CSS/JS ou copie seu conteúdo para os respectivos campos.
+## Funcionalidades
+Menu responsivo, destaque do link ativo, filtros dos projetos, animações de entrada e botão de retorno ao topo. As preferências de movimento reduzido são respeitadas.
+
+## Validação
+Verifique a página em desktop e mobile. Para o laboratório freeCodeCamp, os seletores obrigatórios permanecem: `#navbar`, `#welcome-section`, `#projects`, `.project-tile`, `#profile-link`.
+
+## Publicação
+Envie os arquivos da pasta para a raiz pública de sua hospedagem, preservando a estrutura de subpastas. Não envie a pasta `.git`.

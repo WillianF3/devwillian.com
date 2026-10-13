@@ -30,6 +30,7 @@ class Navigation {
   setOpen(open) {
     this.menu?.classList.toggle('is-open', open);
     this.toggle?.setAttribute('aria-expanded', String(open));
+    this.toggle?.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
     if (this.toggle) this.toggle.textContent = open ? '✕' : '☰';
   }
 }
@@ -84,7 +85,7 @@ class BackToTop {
     if (!this.button) return;
     const update = () => this.button.classList.toggle('is-visible', window.scrollY > 450);
     window.addEventListener('scroll', update, {passive: true});
-    this.button.addEventListener('click', () => window.scrollTo({top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}));
+    this.button.addEventListener('click', () => window.scrollTo({top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
     update();
   }
 }
