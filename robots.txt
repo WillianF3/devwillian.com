@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# A linha Sitemap será adicionada pelo gerador ao informar SITE_URL.
