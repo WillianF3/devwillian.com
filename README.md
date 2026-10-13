@@ -2,15 +2,6 @@
 
 Portfólio pessoal em português, com **HTML5, CSS3 e JavaScript nativo (POO)**, layout preto responsivo, SEO estruturado e acessibilidade por teclado. Não usa framework, analytics nem webfonts externos.
 
-## Rodar localmente
-
-No diretório do projeto:
-
-```bash
-python -m http.server 8000
-```
-
-Abra http://localhost:8000. Também funciona com a extensão Live Server do VS Code. Não é necessário instalar dependências para rodar o site. Para gerar a pasta de publicação, é necessário **Node.js 18+**.
 
 ## Gerar arquivos de publicação
 
