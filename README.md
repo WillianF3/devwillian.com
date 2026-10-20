@@ -1,7 +1,16 @@
 # Portfólio — Willian Ferreira
 
-Portfólio pessoal em português, com **HTML5, CSS3 e JavaScript nativo (POO)**, layout preto responsivo, SEO estruturado e acessibilidade por teclado. Não usa framework, analytics nem webfonts externos.
+Portfólio pessoal em português, com **HTML5, Bootstrap 5.3.3, CSS3 e JavaScript modular (POO)**, layout preto responsivo, SEO estruturado e acessibilidade por teclado. Bootstrap está incluído em `vendor/bootstrap/`, com licença MIT, sem requisições a CDN. Não usa analytics nem webfonts externos.
 
+## Rodar localmente
+
+No diretório do projeto:
+
+```bash
+python -m http.server 8000
+```
+
+Abra http://localhost:8000. Também funciona com a extensão Live Server do VS Code. Não é necessário instalar dependências para rodar o site. Para gerar a pasta de publicação, é necessário **Node.js 18+**.
 
 ## Gerar arquivos de publicação
 
@@ -37,7 +46,10 @@ Se ainda não tiver domínio, `node scripts/build.mjs` cria uma versão de pré-
 - `index.html`: conteúdo semântico, metadados OG e dados estruturados `ProfilePage`/`Person`
 - `privacidade.html`: transparência sobre dados e serviços externos do código atual
 - `css/styles.css`: layout e estados acessíveis, tela pequena, tema preto
-- `js/main.js`: classes `Navigation`, `ProjectFilter`, `BackToTop` e `PortfolioApp`
+- `js/main.js`: inicialização da aplicação
+- `js/PortfolioApp.js`: composição dos componentes, com injeção pelo construtor
+- `js/components/`: classes `Navigation`, `ProjectFilter` e `BackToTop`
+- `vendor/bootstrap/`: CSS, JavaScript e licença do Bootstrap
 - `imagens/portfolio-preview.webp`: captura do próprio portfólio utilizada na prévia social
 - `imagens/`: favicons PNG/ICO (formatos exigidos por navegadores; exceção a WebP)
 - `scripts/build.mjs`: cria versão de publicação, sitemap e URL canonical
@@ -72,3 +84,9 @@ As capas dos projetos são **elementos gráficos CSS**, não fotografias nem scr
 ## freeCodeCamp
 
 Mantidos os identificadores exigidos: `#navbar`, `#welcome-section`, `#projects`, `.project-tile` e `#profile-link`.
+
+## Atualização Bootstrap e POO
+
+A navegação utiliza Navbar e Collapse do Bootstrap, incluindo fechamento por Escape e clique externo. As grades de tecnologias e projetos utilizam row/col e breakpoints do Bootstrap. Botões usam variantes light e outline-light, com o tema escuro original preservado. O filtro oculta também a coluna, evitando espaços vazios. Cada classe possui constructor e init; PortfolioApp coordena os componentes por composição.
+
+Execute `npm test` para verificar filtros e composição e `npm run build` para gerar dist. Abra por um servidor HTTP (Live Server ou o comando Python acima), pois módulos ES não devem ser abertos via file://. O ZIP inclui dist pronta para hospedagem. Nenhum arquivo .git foi incluído.
