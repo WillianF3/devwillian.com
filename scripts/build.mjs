@@ -5,7 +5,8 @@
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, copyFileSync, writeFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-const root = new URL('../', import.meta.url).pathname;
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('../', import.meta.url));
 const output = join(root, 'dist');
 let siteURL = null;
 if (process.env.SITE_URL) {
@@ -30,7 +31,7 @@ function copyPath(relative) {
 function escapeHtml(value) { return value.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;'); }
 rmSync(output, {recursive: true, force: true});
 mkdirSync(output, {recursive: true});
-for (const item of ['index.html', 'privacidade.html', 'css', 'js', 'imagens', 'robots.txt', '.htaccess']) copyPath(item);
+for (const item of ['index.html', 'privacidade.html', 'css', 'js', 'vendor', 'imagens', 'robots.txt', '.htaccess']) copyPath(item);
 if (siteURL) {
   const url = `${siteURL}/`;
   for (const page of ['index.html','privacidade.html']) {

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Willian Ferreira: estudante de Ciência da Computação na Unoesc, projetos de desenvolvimento web, JavaScript e banco de dados.">
+  <meta name="theme-color" content="#080808">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Portfólio Willian Ferreira">
+  <meta property="og:title" content="Willian Ferreira | Desenvolvedor Full Stack em formação">
+  <meta property="og:description" content="Conheça meus projetos de desenvolvimento web, tecnologias e formas de contato.">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- SEO_URL_START: URLs absolutas são adicionadas ao executar scripts/build.mjs com SITE_URL -->
+  <!-- SEO_URL_END -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"ProfilePage",
+    "name":"Portfólio de Willian Ferreira",
+    "inLanguage":"pt-BR",
+    "isPartOf":{"@type":"WebSite","name":"Portfólio de Willian Ferreira","inLanguage":"pt-BR"},
+    "description":"Projetos e tecnologias de Willian Ferreira, estudante de Ciência da Computação.",
+    "mainEntity":{
+      "@type":"Person",
+      "name":"Willian Ferreira",
+      "description":"Estudante de Ciência da Computação na Unoesc e desenvolvedor web em formação.",
+      "affiliation":{"@type":"CollegeOrUniversity","name":"Universidade do Oeste de Santa Catarina (Unoesc)"},
+      "sameAs":["https://github.com/WillianF3","https://www.linkedin.com/in/willian-ferreira-a09730219"],
+      "knowsAbout":["HTML","CSS","JavaScript","React","Node.js","PHP","Python","SQL"]
+    }
+  }</script>
+
+  <title>Willian Ferreira | Desenvolvedor Full Stack</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- JS habilita o menu recolhível; sem JS, links continuam visíveis. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" type="image/x-icon" href="imagens/favicon-wf.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="imagens/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon-180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="imagens/favicon-512.png">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <!-- Navegação fixa -->
+  <nav id="navbar" class="navbar navbar-expand-md" aria-label="Navegação principal">
+    <a href="#welcome-section" class="logo navbar-brand" aria-label="Willian Ferreira — início">
+      &lt;WF<span>/&gt;</span>
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-links" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav-links">
+      <div class="nav-links navbar-nav">
+      <a class="nav-link" href="#welcome-section">Início</a>
+      <a class="nav-link" href="#about">Sobre</a>
+      <a class="nav-link" href="#skills">Tecnologias</a>
+      <a class="nav-link" href="#projects">Projetos</a>
+      <a class="nav-link" href="#contact">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="conteudo">
+
+    <!-- Seção de boas-vindas -->
+    <section id="welcome-section">
+
+      <div class="hero-content">
+        <span class="eyebrow">DESENVOLVIMENTO WEB · PROJETOS REAIS</span>
+
+        <h1>
+          Eu sou <span>Willian Ferreira.</span>
+        </h1>
+
+        <h2>Desenvolvedor Full Stack em formação.</h2>
+
+        <p>
+          Estudo Ciência da Computação na Unoesc e desenvolvo interfaces,
+          aplicações web e projetos para praticar programação e resolver problemas.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-light">
+            Ver meus projetos ↗
+          </a>
+
+          <a href="#contact" class="btn btn-outline-light">
+            Entre em contato
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>HTML5</strong>
+            <small>Estrutura</small>
+          </div>
+
+          <div>
+            <strong>CSS3</strong>
+            <small>Estilização</small>
+          </div>
+
+          <div>
+            <strong>JavaScript</strong>
+            <small>Interatividade</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-bar">
+            <i></i><i></i><i></i>
+            <span>developer.js</span>
+          </div>
+
+          <pre><code><span class="purple">const</span> developer = {
+  name: <span class="green">"Willian Ferreira"</span>,
+  focus: <span class="green">"Full Stack"</span>,
+  skills: [
+    <span class="green">"JavaScript"</span>,
+    <span class="green">"React"</span>,
+    <span class="green">"Node.js"</span>,
+    <span class="green">"SQL"</span>
+  ],
+  learning: <span class="orange">true</span>
+};
+
+<span class="blue">console.log</span>(
+  <span class="green">"Hello, World!"</span>
+);</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="about" class="section-container">
+
+      <div class="section-heading">
+        <span class="section-label">01 / SOBRE MIM</span>
+        <h2>Da ideia à <span>implementação.</span></h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Sou estudante de Ciência da Computação na
+            Unoesc e desenvolvedor em formação, com
+            foco no desenvolvimento Front-end e Back-end.
+          </p>
+
+          <p>
+            Tenho conhecimentos em HTML, CSS, JavaScript,
+            React, Node.js, PHP, Python e bancos de dados
+            relacionais como MySQL e PostgreSQL.
+          </p>
+
+          <p>
+            Entre meus trabalhos estão um catálogo web com integração ao WhatsApp
+            e um simulador de filas com cálculo de tempos de espera.
+            Procuro estágio ou uma primeira oportunidade de desenvolvimento júnior.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <span class="card-icon">🎓</span>
+          <h3>Ciência da Computação</h3>
+          <p>Universidade do Oeste de Santa Catarina</p>
+          <span class="status">Em formação</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="skills" class="section-container skills-section">
+
+      <div class="section-heading">
+        <span class="section-label">02 / TECNOLOGIAS</span>
+        <h2>Tecnologias que <span>estudo e utilizo.</span></h2>
+        <p>Ferramentas e tecnologias que utilizo nos meus estudos e projetos.</p>
+      </div>
+
+      <div class="skills-grid row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+
+        <div class="col"><div class="skill-card h-100">
+          <span class="skill-icon">⌘</span>
+          <h3>Front-end</h3>
+          <p>HTML5, CSS3, JavaScript e React</p>
+        </div></div>
+
+        <div class="col"><div class="skill-card h-100">
+          <span class="skill-icon">{ }</span>
+          <h3>Back-end</h3>
+          <p>Node.js, PHP e Python</p>
+        </div></div>
+
+        <div class="col"><div class="skill-card h-100">
+          <span class="skill-icon">▤</span>
+          <h3>Banco de Dados</h3>
+          <p>MySQL, PostgreSQL e Oracle SQL</p>
+        </div></div>
+
+        <div class="col"><div class="skill-card h-100">
+          <span class="skill-icon">⌥</span>
+          <h3>Ferramentas</h3>
+          <p>Git, GitHub e VS Code</p>
+        </div></div>
+
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="section-container">
+
+      <div class="section-heading">
+        <span class="section-label">03 / PORTFÓLIO</span>
+        <h2>Projetos em <span>destaque.</span></h2>
+        <p>Projetos práticos com foco em interface, lógica e funcionalidade. Os links abrem em uma nova aba.</p>
+      </div>
+
+      <div class="project-filters" role="group" aria-label="Filtrar projetos">
+        <button class="btn btn-outline-light filter-btn is-active" data-filter="all" aria-pressed="true">Todos</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="front-end" aria-pressed="false">Front-end</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="javascript" aria-pressed="false">JavaScript</button>
+      </div>
+      <p id="project-filter-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true">Exibindo 3 projetos.</p>
+      <div class="projects-grid row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="project-results" aria-label="Lista de projetos">
+
+        <div class="col project-column"><article class="project-tile card h-100" data-category="front-end javascript">
+          <div class="project-image project-one">
+            <span>01</span>
+            <strong>Lili Body Piercer</strong>
+          </div>
+
+          <div class="project-content">
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <h3>Lili Body Piercer</h3>
+
+            <p>
+              Site com catálogo de piercings, filtros de produtos,
+              visualização rápida e contato via WhatsApp. Layout adaptado para celular.
+            </p>
+
+            <a href="https://lilibody.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Acessar site ↗
+            </a>
+            <a class="project-secondary-link" href="https://github.com/WillianF3/Lili-Teixeira-Body-Piercer" target="_blank" rel="noopener noreferrer">Ver código no GitHub ↗</a>
+          </div>
+        </article></div>
+
+        <div class="col project-column"><article class="project-tile card h-100" data-category="javascript">
+          <div class="project-image project-two">
+            <span>02</span>
+            <strong>Simulador de Filas</strong>
+          </div>
+
+          <div class="project-content">
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+
+            <h3>Simulador de Filas</h3>
+
+            <p>
+              Ferramenta para simular chegadas e atendimentos e calcular
+              fila média, espera, ociosidade e utilização, com gráficos de resultados.
+            </p>
+
+            <a href="https://github.com/WillianF3"
+               target="_blank"
+               rel="noopener noreferrer">
+              Explorar GitHub ↗
+            </a>
+          </div>
+        </article></div>
+
+        <div class="col project-column"><article class="project-tile card h-100" data-category="front-end">
+          <div class="project-image project-three">
+            <span>03</span>
+            <strong>Projetos Web</strong>
+          </div>
+
+          <div class="project-content">
+            <div class="project-tags">
+              <span>Front-end</span>
+              <span>Back-end</span>
+              <span>SQL</span>
+            </div>
+
+            <h3>Projetos e Estudos</h3>
+
+            <p>
+              Exercícios e aplicações de HTML, CSS, JavaScript, PHP
+              e banco de dados. Os repositórios reúnem estudos e experimentos.
+            </p>
+
+            <a href="https://github.com/WillianF3"
+               target="_blank"
+               rel="noopener noreferrer">
+              Ver repositórios ↗
+            </a>
+          </div>
+        </article></div>
+
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact-section">
+
+      <div class="contact-content">
+        <span class="section-label">04 / CONTATO</span>
+
+        <h2>Quer conversar sobre <span>tecnologia?</span></h2>
+
+        <p>
+          Busco oportunidades de estágio ou desenvolvimento júnior.
+          Você pode ver meu código no GitHub ou entrar em contato pelo LinkedIn.
+        </p>
+
+        <div class="contact-buttons">
+          <a id="profile-link"
+             href="https://github.com/WillianF3"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-light">
+            Meu GitHub ↗
+          </a>
+
+          <a href="https://www.linkedin.com/in/willian-ferreira-a09730219"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-outline-light">
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2026 Willian Ferreira. Desenvolvido com HTML5, Bootstrap e JavaScript orientado a objetos.</p>
+    <div class="footer-links">
+      <a href="privacidade.html">Privacidade</a>
+      <a href="#welcome-section">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+  <button id="back-to-top" type="button" hidden aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

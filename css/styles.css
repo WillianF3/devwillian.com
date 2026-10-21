@@ -71,7 +71,7 @@ button { font: inherit; }
 .about-card p { margin: 8px 0 22px; font-size: .91rem; color: var(--muted); }
 .status { display: inline-block; padding: 6px 12px; color: #fff; background: #2b2b2b; border: 1px solid #585858; border-radius: 30px; font-size: .79rem; }
 .skills-section, #projects { border-top: 1px solid var(--border); }
-.skills-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; margin-top: 42px; }
+.skills-grid { margin-top: 26px; }
 .skill-card { min-width: 0; padding: 27px 21px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; transition: background-color .2s,border-color .2s,transform .2s; }
 .skill-card:hover { transform: translateY(-4px); background: #1c1c1c; border-color: #777; }
 .skill-icon { color: #ddd; font-size: 1.85rem; font-weight: 800; }
@@ -82,7 +82,7 @@ button { font: inherit; }
 .project-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 27px; }
 .filter-btn { min-height: 44px; padding: 9px 18px; color: #ebebeb; background: #161616; border: 1px solid #696969; border-radius: 100px; font-size: .86rem; cursor: pointer; transition: background-color .2s, color .2s; }
 .filter-btn:hover, .filter-btn.is-active { background: #f5f5f5; color: #101010; }
-.projects-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 23px; margin-top: 28px; }
+.projects-grid { margin-top: 12px; }
 .project-tile { min-width: 0; overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; transition: transform .2s,border-color .2s; }
 .project-tile:hover { transform: translateY(-5px); border-color: #777; }
 .project-tile[hidden] { display: none; }
@@ -128,25 +128,25 @@ footer p { margin: 0; }
   #welcome-section { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
   .hero-content { max-width: 780px; }
-  .skills-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .projects-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .skills-grid { margin-top: 26px; }
+  .projects-grid { margin-top: 12px; }
 }
 @media (max-width: 700px) {
   :root { --page-gutter: 6vw; }
   #navbar { flex-wrap: wrap; gap: 8px; }
-  .js .menu-toggle { display: inline-block; margin-left: auto; }
+  
   .nav-links { flex-basis: 100%; flex-direction: column; align-items: stretch; gap: 0; }
   .nav-links a { display: block; min-height: 44px; padding: 9px 2px; font-size: .94rem; }
-  .js .nav-links:not(.is-open) { display: none; }
+  
   #welcome-section { padding-top: clamp(42px,7vh,65px); padding-bottom: 65px; }
   .hero-content h1 { font-size: clamp(2rem,9vw,3.1rem); }
   .about-content { grid-template-columns: 1fr; gap: 22px; }
-  .projects-grid { grid-template-columns: 1fr; }
+  .projects-grid { margin-top: 12px; }
   .project-image { min-height: 165px; }
   footer { flex-direction: column; text-align: center; }
 }
 @media (max-width: 470px) {
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid { margin-top: 26px; }
   .hero-stats { gap: 15px 25px; }
   .hero-buttons .btn { flex: 1 1 100%; }
   .eyebrow, .section-label { letter-spacing: .09em; }
@@ -157,3 +157,22 @@ footer p { margin: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Bootstrap controla as colunas e o menu; o CSS abaixo preserva a identidade. */
+#navbar .navbar-brand { margin: 0; color: var(--text); }
+#navbar .navbar-toggler { min-height: 44px; }
+.navbar-collapse { flex-grow: 0; }
+.project-column { min-width: 0; }
+.project-content { flex: 1; }
+.btn-light { --bs-btn-bg: #f5f5f5; --bs-btn-color: #080808; --bs-btn-hover-bg: #d0d0d0; }
+.btn-outline-light { --bs-btn-border-color: #777; }
+.btn:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+@media (max-width: 767.98px) {
+  #navbar { flex-wrap: wrap; }
+  #nav-links { flex-basis: 100%; }
+  .nav-links { flex-direction: column; align-items: stretch; gap: 0; }
+  .nav-links a { min-height: 44px; }
+  html:not(.js) #nav-links.collapse { display: block; }
+  html:not(.js) .navbar-toggler { display: none; }
+}
+
