@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="GIT GITHUB — arte de tecnologia DevWillian">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1b27"/><stop offset=".54" stop-color="#08111b"/><stop offset="1" stop-color="#120a17"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#15dce9" stop-opacity=".80"/><stop offset=".65" stop-color="#15dce9" stop-opacity=".42"/><stop offset="1" stop-color="#15dce9" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172936" stop-opacity=".68"/><stop offset="1" stop-color="#050910" stop-opacity=".28"/></linearGradient>
+<pattern id="grid" width="62" height="62" patternUnits="userSpaceOnUse"><path d="M62 0 H0 V62" stroke="#18d6e9" stroke-opacity=".08" stroke-width="1" fill="none"/></pattern>
+<clipPath id="clip"><rect width="1600" height="900" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#grid)"/>
+<circle cx="1350" cy="140" r="540" fill="url(#glow)"/>
+<circle cx="1365" cy="155" r="352" fill="#15dce9" opacity=".38"/>
+<circle cx="1365" cy="155" r="360" stroke="#15dce9" stroke-width="2" stroke-opacity=".22" fill="none"/>
+<text x="90" y="680" fill="#d9eaf1" font-size="600" font-family="Arial, sans-serif" font-weight="900" transform="rotate(-13 300 530)" opacity=".09">路</text>
+<g transform="translate(990 277) rotate(-3)" opacity=".68">
+<rect width="550" height="350" rx="19" fill="url(#glass)" stroke="#15dce9" stroke-opacity=".45" stroke-width="2"/>
+<path d="M0 61 H550" stroke="#15dce9" stroke-opacity=".4"/>
+<circle cx="28" cy="30" r="8" fill="#ff284e"/><circle cx="56" cy="30" r="8" fill="#e8b557"/><circle cx="84" cy="30" r="8" fill="#15dce9"/>
+<text x="122" y="38" fill="#c4d5dd" font-family="monospace" font-size="23">src / git-github.js</text>
+</g>
+<text x="1038" y="435" fill="#a7d5db" font-size="30" font-family="monospace" opacity=".72">git switch -c nova-versao</text>
+<text x="1038" y="491" fill="#f0acb8" font-size="30" font-family="monospace" opacity=".72">git add .</text>
+<text x="1038" y="547" fill="#d1d7df" font-size="30" font-family="monospace" opacity=".72">git commit -m "update"</text>
+<text x="1038" y="603" fill="#7aa2bc" font-size="30" font-family="monospace" opacity=".72">git push origin main</text>
+<rect x="64" y="64" width="8" height="48" fill="#15dce9"/>
+<text x="96" y="99" fill="#a8cad5" font-family="monospace" font-size="32" font-weight="700" letter-spacing="2">VERSIONAMENTO  //  DEV</text>
+<circle cx="1490" cy="100" r="50" fill="#071019" fill-opacity=".90" stroke="#ffffff" stroke-opacity=".22"/>
+<text x="1490" y="112" text-anchor="middle" font-family="monospace" font-size="34" fill="white" font-weight="700">12</text>
+<text x="124" y="445" fill="#f5f4f1" font-family="Arial, Helvetica, sans-serif" font-size="215" font-weight="900" letter-spacing="-16" paint-order="stroke fill" stroke="#071019" stroke-width="2">GIT</text>
+<text x="124" y="617" fill="#f5f4f1" font-family="Arial, Helvetica, sans-serif" font-size="215" font-weight="900" letter-spacing="-16" paint-order="stroke fill" stroke="#071019" stroke-width="2">GITHUB</text>
+<circle cx="686" cy="617" r="21" fill="#15dce9"/>
+<path d="M68 785 H1532" stroke="#15dce9" stroke-opacity=".23" stroke-width="2"/>
+<text x="96" y="837" fill="#c2d4da" font-family="monospace" font-size="31" font-weight="700" letter-spacing="2">COMMITS · BRANCHES · WEB</text>
+<text x="1495" y="840" text-anchor="end" font-family="monospace" font-size="25" font-weight="700" fill="#15dce9">DEVWILLIAN ↗</text>
+</g></svg>

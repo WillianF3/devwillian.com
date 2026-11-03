@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html data-bs-theme="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Willian Ferreira: estudante de Ciência da Computação na Unoesc, projetos de desenvolvimento web, JavaScript e banco de dados.">
-  <meta name="theme-color" content="#080808">
-  <meta name="color-scheme" content="dark">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Portfólio Willian Ferreira">
-  <meta property="og:title" content="Willian Ferreira | Desenvolvedor Full Stack em formação">
-  <meta property="og:description" content="Conheça meus projetos de desenvolvimento web, tecnologias e formas de contato.">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- SEO_URL_START: URLs absolutas são adicionadas ao executar scripts/build.mjs com SITE_URL -->
-  <!-- SEO_URL_END -->
-  <script type="application/ld+json">{
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Willian Ferreira cria sites profissionais, sistemas de agendamento e soluções digitais. Conheça projetos reais e converse sobre sua ideia." name="description"/>
+<meta content="#080808" name="theme-color"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="Portfólio Willian Ferreira" property="og:site_name"/>
+<meta content="Willian Ferreira | Sites e Sistemas Web" property="og:title"/>
+<meta content="Criação de sites e sistemas web. Veja projetos reais e fale com Willian Ferreira pelo WhatsApp." property="og:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- SEO_URL_START -->
+<link href="https://devwillian.com/" rel="canonical"/>
+<meta content="https://devwillian.com/" property="og:url"/>
+<meta content="https://devwillian.com/imagens/portfolio-preview.webp" property="og:image"/>
+<meta content="Captura de tela do portfólio de Willian Ferreira" property="og:image:alt"/>
+<meta content="https://devwillian.com/imagens/portfolio-preview.webp" name="twitter:image"/>
+<!-- SEO_URL_END -->
+<script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"ProfilePage",
     "name":"Portfólio de Willian Ferreira",
     "inLanguage":"pt-BR",
     "isPartOf":{"@type":"WebSite","name":"Portfólio de Willian Ferreira","inLanguage":"pt-BR"},
-    "description":"Projetos e tecnologias de Willian Ferreira, estudante de Ciência da Computação.",
+    "description":"Portfólio de desenvolvimento web com sites profissionais, aplicações e sistemas personalizados.",
     "mainEntity":{
       "@type":"Person",
       "name":"Willian Ferreira",
@@ -31,337 +37,311 @@
       "knowsAbout":["HTML","CSS","JavaScript","React","Node.js","PHP","Python","SQL"]
     }
   }</script>
-
-  <title>Willian Ferreira | Desenvolvedor Full Stack</title>
-
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- JS habilita o menu recolhível; sem JS, links continuam visíveis. -->
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="icon" type="image/x-icon" href="imagens/favicon-wf.ico">
-  <link rel="icon" type="image/png" sizes="192x192" href="imagens/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="imagens/favicon-512.png">
+<title>Willian Ferreira | Desenvolvimento de Sites e Sistemas Web</title>
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/styles.css?v=20261020-social1" rel="stylesheet"/>
+<!-- JS habilita o menu recolhível; sem JS, links continuam visíveis. -->
+<script>document.documentElement.classList.add('js');</script>
+<link href="https://devwillian.com/imagens/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="https://devwillian.com/imagens/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="css/samurai-reference.css?v=20261023-06" rel="stylesheet"/><link href="css/processo-cards.css?v=20261029-01" rel="stylesheet"/><link href="css/flowers-futuristic-adaptado.css?v=20261030-11" rel="stylesheet"/><link href="css/hero-cyberpunk-motion.css?v=20261030-02" rel="stylesheet"/><link href="css/ux-conversao.css?v=20261103-01" rel="stylesheet"/>
 </head>
+<body class="samurai-ui">
+<div aria-hidden="true" class="scroll-progress"></div><a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<!-- Navegação fixa -->
+<nav aria-label="Navegação principal" class="navbar navbar-expand-md" id="navbar">
+<a aria-label="Willian Ferreira — início" class="logo navbar-brand" href="#welcome-section">W<span>.</span><small class="brand-label">DEV / PORTFÓLIO</small></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu" class="navbar-toggler" data-bs-target="#nav-links" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-end" id="nav-links">
+<div class="nav-links navbar-nav">
+<a class="nav-link" href="#welcome-section">INÍCIO</a>
+<a class="nav-link" href="#servicos">SERVIÇOS</a>
+<a class="nav-link" href="#projects">PROJETOS</a>
+<a class="nav-link" href="#about">SOBRE</a>
+<a class="nav-link" href="#contact">CONTATO</a>
+<a class="nav-link nav-whatsapp" href="https://wa.me/554998347453?text=Ol%C3%A1%2C%20Willian%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer" aria-label="Conversar sobre um projeto pelo WhatsApp (abre em nova aba)">SOLICITAR ORÇAMENTO <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+</nav>
+<main id="conteudo">
+<!-- Seção de boas-vindas -->
 
-<body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
-
-  <!-- Navegação fixa -->
-  <nav id="navbar" aria-label="Navegação principal">
-    <a href="#welcome-section" class="logo" aria-label="Willian Ferreira — início">
-      &lt;WF<span>/&gt;</span>
-    </a>
-
-    <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu">☰</button>
-    <div class="nav-links" id="nav-links">
-      <a href="#welcome-section">Início</a>
-      <a href="#about">Sobre</a>
-      <a href="#skills">Tecnologias</a>
-      <a href="#projects">Projetos</a>
-      <a href="#contact">Contato</a>
+<section id="welcome-section" class="ff-hero-sequence" aria-label="Apresentação do portfólio de Willian Ferreira">
+  <div class="ff-hero-stage">
+    <div class="ff-hero-art ff-cyberpunk-art" aria-hidden="true">
+      <!-- V7.7: camadas reais independentes (CSS/SVG/canvas + retrato PNG/WebP).
+           Nenhum texto fica embutido numa imagem única. -->
+      <div class="ff-cyber-world">
+        <span class="ff-cyber-sun ff-cyber-sun--red"></span>
+        <span class="ff-cyber-sun ff-cyber-sun--cyan"></span>
+        <span class="ff-cyber-glyph ff-cyber-glyph--red" lang="ja">界</span>
+        <span class="ff-cyber-glyph ff-cyber-glyph--cyan" lang="ja">未</span>
+        <svg class="ff-cyber-circuits" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false" aria-hidden="true">
+          <g class="ff-cyber-circuit-red" fill="none" stroke-width="2">
+            <path d="M0 265H140L190 315H360L403 275H520"/>
+            <path d="M0 530H95L180 605H350L390 566H585"/>
+            <path d="M0 715H180L215 688H360L415 743H600"/>
+            <path d="M130 0V135L160 170H330"/>
+            <path d="M40 425H250L294 382H440"/>
+          </g>
+          <g class="ff-cyber-circuit-cyan" fill="none" stroke-width="2">
+            <path d="M1600 174H1472L1422 215H1225L1170 275H1070"/>
+            <path d="M1600 445H1490L1440 490H1180L1100 560H975"/>
+            <path d="M1600 690H1440L1400 655H1245L1190 720H1010"/>
+            <path d="M1570 0V150L1500 205H1395"/>
+            <path d="M1600 810H1420L1375 765H1220"/>
+          </g>
+          <g class="ff-cyber-circuit-pink" fill="none" stroke-width="5">
+            <path d="M10 480L80 420H170"/><path d="M1100 650H1295L1355 605H1520"/>
+          </g>
+        </svg>
+        <span class="ff-cyber-outline ff-cyber-outline--a"></span>
+        <span class="ff-cyber-outline ff-cyber-outline--b"></span>
+        <span class="ff-cyber-outline ff-cyber-outline--c"></span>
+        <span class="ff-cyber-hud ff-cyber-hud--left">&lt; SYSTEM / ONLINE &gt;<i></i><i></i><i></i><i></i></span>
+        <span class="ff-cyber-hud ff-cyber-hud--right">&lt; W / DEV &gt;<i></i><i></i><i></i><i></i></span>
+        <span class="ff-cyber-scan"></span>
+      </div>
+      <canvas class="ff-cyber-particles" aria-hidden="true"></canvas>
+      <img class="ff-hero-figure" src="imagens/willian-retrato-recortado.webp" alt="" width="706" height="1370" fetchpriority="high" decoding="async" />
+      <div class="ff-cyber-floor" aria-hidden="true"></div>
     </div>
-  </nav>
-
-  <main id="conteudo">
-
-    <!-- Seção de boas-vindas -->
-    <section id="welcome-section">
-
-      <div class="hero-content">
-        <span class="eyebrow">DESENVOLVIMENTO WEB · PROJETOS REAIS</span>
-
-        <h1>
-          Eu sou <span>Willian Ferreira.</span>
-        </h1>
-
-        <h2>Desenvolvedor Full Stack em formação.</h2>
-
-        <p>
-          Estudo Ciência da Computação na Unoesc e desenvolvo interfaces,
-          aplicações web e projetos para praticar programação e resolver problemas.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">
-            Ver meus projetos ↗
-          </a>
-
-          <a href="#contact" class="btn btn-outline">
-            Entre em contato
-          </a>
+    <div class="ff-capsule-field" aria-hidden="true"><div class="ff-capsule" aria-hidden="true" data-col="0" data-row="0" data-index="0"><img src="imagens/hero-posters/campo-ferrari.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="1" data-row="0" data-index="1"><img src="imagens/hero-posters/lili-body.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="2" data-row="0" data-index="2"><img src="imagens/hero-posters/martelli.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="3" data-row="0" data-index="3"><img src="imagens/hero-posters/devwillian.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="4" data-row="0" data-index="4"><img src="imagens/hero-posters/d-b-3d.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="0" data-row="1" data-index="5"><img src="imagens/hero-posters/html-css.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="1" data-row="1" data-index="6"><img src="imagens/hero-posters/javascript.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="3" data-row="1" data-index="7"><img src="imagens/hero-posters/react.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="0" data-row="2" data-index="8"><img src="imagens/hero-posters/nodejs.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="1" data-row="2" data-index="9"><img src="imagens/hero-posters/python.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="2" data-row="2" data-index="10"><img src="imagens/hero-posters/mysql.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="3" data-row="2" data-index="11"><img src="imagens/hero-posters/git-github.svg" alt="" loading="lazy" decoding="async" /></div>
+<div class="ff-capsule" aria-hidden="true" data-col="4" data-row="2" data-index="12"><img src="imagens/hero-posters/drdrone.svg" alt="" loading="lazy" decoding="async" /></div>
+      <div class="ff-capsule-symbol" aria-hidden="true"><img class="ff-capsule-logo" src="imagens/logo-w-capsula.svg" width="160" height="116" alt="" decoding="async" /></div>
+    </div>
+    <div class="ff-hero-copy">
+      <p class="ff-hero-eyebrow">W / DEV &nbsp; · &nbsp; DESENVOLVIMENTO WEB &nbsp; / &nbsp; 2026</p>
+      <div class="ff-hero-message">
+        <span class="ff-hero-kicker">SITES PROFISSIONAIS · SISTEMAS WEB · SOLUÇÕES DIGITAIS</span>
+        <h1>Transformo ideias em <span>sites e sistemas web.</span></h1>
+        <p class="ff-hero-description">Sou Willian Ferreira, desenvolvedor web e estudante de Ciência da Computação. Crio sites modernos, plataformas de agendamento e soluções digitais para o seu negócio.</p>
+        <div class="ff-hero-actions">
+          <a href="https://wa.me/554998347453?text=Ol%C3%A1%2C%20Willian%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer" class="ff-hero-cta">FALAR SOBRE MEU PROJETO <span aria-hidden="true">↗</span></a>
+          <a href="#destaques" class="ff-hero-secondary">VER PROJETOS REALIZADOS <span aria-hidden="true">↓</span></a>
         </div>
-
-        <div class="hero-stats">
-          <div>
-            <strong>HTML5</strong>
-            <small>Estrutura</small>
-          </div>
-
-          <div>
-            <strong>CSS3</strong>
-            <small>Estilização</small>
-          </div>
-
-          <div>
-            <strong>JavaScript</strong>
-            <small>Interatividade</small>
-          </div>
-        </div>
+        <p class="ff-hero-proof">PROJETOS REAIS <span aria-hidden="true">/</span> CAMPO FERRARI · LILI BODY · MARTELLI</p>
       </div>
+      <p class="ff-hero-signature" aria-label="Willian Ferreira, desenvolvedor web">WILLIAN <strong>DEV.</strong></p>
+      <span class="ff-hero-scroll">ROLE PARA CONHECER <span aria-hidden="true">↓</span></span>
+    </div>
+    <p class="ff-marquee" aria-hidden="true"><span>WILLIAN</span> CÓDIGO COM IDENTIDADE.</p>
+    <div class="ff-stats" aria-label="Resumo do portfólio">
+      <article class="ff-stat"><span class="ff-stat-bullet"></span><strong data-count="5" data-digits="2">05</strong><h2>PROJETOS</h2><p>Trabalhos e estudos apresentados neste portfólio.</p></article>
+      <article class="ff-stat"><span class="ff-stat-bullet"></span><strong data-count="4" data-digits="2">04</strong><h2>ÁREAS</h2><p>Front-end, back-end, bancos de dados e ferramentas.</p></article>
+      <article class="ff-stat"><span class="ff-stat-bullet"></span><strong data-count="1" data-digits="2">01</strong><h2>PORTFÓLIO</h2><p>Uma seleção de projetos, experiências e certificações.</p></article>
+      <article class="ff-stat"><span class="ff-stat-bullet"></span><strong data-count="26" data-digits="2">26</strong><h2>ANO 2026</h2><p>Em evolução contínua, com novos aprendizados.</p></article>
+    </div>
+    <div class="ff-hero-credits">ANIMAÇÃO DE REFERÊNCIA · PROJETOS REAIS NA SEÇÃO ABAIXO</div>
+  </div>
+</section>
+<section class="ff-audience" id="servicos" aria-labelledby="ff-audience-title">
+ <div class="ff-audience-top" data-ff-reveal><span class="ff-small-label">O QUE POSSO CRIAR / 03 SOLUÇÕES</span><h2 id="ff-audience-title">SOLUÇÕES WEB PARA <em>O SEU NEGÓCIO.</em></h2><p>Da primeira presença digital à automação de tarefas: interfaces claras, responsivas e feitas para facilitar a vida de quem usa.</p></div>
+ <div class="ff-audience-grid">
+  <article class="ff-audience-card" data-ff-reveal><span class="ff-card-number">01 /</span><h3>Sites profissionais</h3><p>Sites institucionais, landing pages e catálogos para apresentar seu negócio e facilitar o contato.</p><span class="ff-card-line" aria-hidden="true"></span></article>
+  <article class="ff-audience-card" data-ff-reveal><span class="ff-card-number">02 /</span><h3>Sistemas web</h3><p>Agendamentos, reservas e funcionalidades personalizadas para organizar processos e atendimentos.</p><span class="ff-card-line" aria-hidden="true"></span></article>
+  <article class="ff-audience-card" data-ff-reveal><span class="ff-card-number">03 /</span><h3>Soluções personalizadas</h3><p>Integrações, interfaces interativas e melhorias digitais alinhadas às necessidades do projeto.</p><span class="ff-card-line" aria-hidden="true"></span></article>
+ </div>
+ <div class="ux-services-footer"><span>UMA IDEIA EM MENTE?</span><a href="https://wa.me/554998347453?text=Ol%C3%A1%2C%20Willian%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer">CONVERSAR SOBRE SEU PROJETO <span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="ff-showcase" id="destaques" aria-labelledby="ff-showcase-title">
+ <div class="ff-showcase-stage">
+   <div class="ff-showcase-glow" aria-hidden="true"></div>
+   <div class="ff-showcase-heading"><span class="ff-showcase-eyebrow">SELEÇÃO DO PORTFÓLIO <i aria-hidden="true">●</i> 02 DESTAQUES</span><h2 id="ff-showcase-title"><span>IDEIAS EM MOVIMENTO.</span><span>PROJETOS COM PROPÓSITO.</span></h2></div>
+   <div class="ff-showcase-grid">
+     <a class="ff-showcase-card" href="https://campoferrari.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site Campo Ferrari">
+       <div class="ff-showcase-media ff-ferrari-media"><span class="ff-showcase-index">01</span><span class="ff-media-top">AIRSOFT // PLATAFORMA WEB</span><span class="ff-media-kanji" aria-hidden="true" lang="ja">戦</span><strong>CAMPO<br/>FERRARI<span>.</span></strong><small>RESERVAS · EXPERIÊNCIAS · WEB</small></div>
+       <div class="ff-showcase-card-content"><h3>Campo Ferrari — plataforma para organizar jogos e reservas.</h3><p>HTML5 · CSS3 · JavaScript · PHP · MySQL <span aria-hidden="true">↗</span></p></div>
+     </a>
+     <a class="ff-showcase-card" href="https://lilibody.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site Lili Body Piercer">
+       <div class="ff-showcase-media ff-lili-media"><span class="ff-showcase-index">02</span><span class="ff-media-top">BELEZA // CATÁLOGO WEB</span><span class="ff-media-kanji" aria-hidden="true" lang="ja">美</span><strong>LILI<br/>BODY<span>.</span></strong><small>CATÁLOGO · CONTATO · WEB</small></div>
+       <div class="ff-showcase-card-content"><h3>Lili Body Piercer — catálogo responsivo e contato facilitado.</h3><p>HTML5 · CSS3 · JavaScript <span aria-hidden="true">↗</span></p></div>
+     </a>
+   </div>
+   <div class="ff-showcase-footer"><span>PROJETOS EM DESTAQUE</span><a href="#projects">VER TODOS OS PROJETOS <span aria-hidden="true">↗</span></a></div>
+ </div>
+</section>
+<section class="ff-paths" aria-labelledby="ff-paths-title">
+ <div class="ff-paths-header" data-ff-reveal><span class="ff-small-label">VAMOS CONVERSAR?</span><h2 id="ff-paths-title">QUAL É O PRÓXIMO PASSO?</h2><p>Tem um projeto ou uma oportunidade em TI? Escolha o assunto e encontre o canal mais direto para conversar.</p></div>
+ <div class="ff-paths-grid">
+  <article class="ff-path-card ff-path-card-featured" data-ff-reveal><div class="ff-path-top"><span>01 // PROJETO</span><span aria-hidden="true">↗</span></div><h3>Seu projeto web</h3><p>Converse sobre uma ideia de site, catálogo ou aplicação web.</p><ul><li>Interfaces responsivas</li><li>Experiência de navegação</li><li>Integrações e funcionalidades</li></ul><a href="https://wa.me/554998347453?text=Ol%C3%A1%2C%20Willian%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer">CONVERSAR NO WHATSAPP <span aria-hidden="true">↗</span></a></article>
+  <article class="ff-path-card" data-ff-reveal><div class="ff-path-top"><span>02 // CARREIRA</span><span aria-hidden="true">↗</span></div><h3>Oportunidades em TI</h3><p>Conheça meus estudos e projetos para conversar sobre estágio ou vaga júnior.</p><ul><li>Front-end e back-end</li><li>Dados e ferramentas web</li><li>Aprendizado e evolução</li></ul><a href="https://www.linkedin.com/in/willian-ferreira-a09730219" target="_blank" rel="noopener noreferrer">VER MEU LINKEDIN <span aria-hidden="true">↗</span></a></article>
+ </div>
+</section>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="code-window">
-          <div class="window-bar">
-            <i></i><i></i><i></i>
-            <span>developer.js</span>
-          </div>
 
-          <pre><code><span class="purple">const</span> developer = {
-  name: <span class="green">"Willian Ferreira"</span>,
-  focus: <span class="green">"Full Stack"</span>,
-  skills: [
-    <span class="green">"JavaScript"</span>,
-    <span class="green">"React"</span>,
-    <span class="green">"Node.js"</span>,
-    <span class="green">"SQL"</span>
-  ],
-  learning: <span class="orange">true</span>
-};
-
-<span class="blue">console.log</span>(
-  <span class="green">"Hello, World!"</span>
-);</code></pre>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Sobre mim -->
-    <section id="about" class="section-container">
-
-      <div class="section-heading">
-        <span class="section-label">01 / SOBRE MIM</span>
-        <h2>Da ideia à <span>implementação.</span></h2>
-      </div>
-
-      <div class="about-content">
-        <div class="about-text">
-          <p>
+<!-- Sobre mim -->
+<section class="section-container" id="about">
+<div class="section-heading">
+<span class="section-label">01 / SOBRE MIM</span>
+<h2>Da ideia à <span>implementação.</span></h2>
+</div>
+<div class="about-content">
+<div class="about-text">
+<p>
             Sou estudante de Ciência da Computação na
             Unoesc e desenvolvedor em formação, com
             foco no desenvolvimento Front-end e Back-end.
           </p>
-
-          <p>
+<p>
             Tenho conhecimentos em HTML, CSS, JavaScript,
             React, Node.js, PHP, Python e bancos de dados
             relacionais como MySQL e PostgreSQL.
           </p>
-
-          <p>
+<p>
             Entre meus trabalhos estão um catálogo web com integração ao WhatsApp
             e um simulador de filas com cálculo de tempos de espera.
-            Procuro estágio ou uma primeira oportunidade de desenvolvimento júnior.
+            Também tenho interesse em oportunidades de estágio ou desenvolvimento júnior.
           </p>
+</div>
+<div class="about-card">
+<span class="card-icon">🎓</span>
+<h3>Ciência da Computação</h3>
+<p>Universidade do Oeste de Santa Catarina</p>
+<span class="status">Em formação</span>
+</div>
+</div>
+</section>
+<!-- Tecnologias -->
+<section class="section-container skills-section" id="skills"><div class="section-head dual-heading"><div><span class="section-label">02 // TECHNOLOGY STACK</span><h2>Ferramentas que<br/><span>dão vida às ideias.</span></h2></div><div class="section-head-aside"><p>Tecnologias e ferramentas que utilizo nos estudos e nos projetos para criar experiências digitais.</p><a class="mini-outline" href="certificados.html">VER CERTIFICADOS ↗</a></div></div><div class="skills-grid skills-cyber"><article class="skill-card tech-panel tone-red" data-reveal="" data-tilt="">
+<div class="tech-art"><span class="tech-index">01 / 04</span><span class="tech-corner"></span><span class="tech-circle"></span><span class="tech-radar"></span><span aria-hidden="true" class="tech-kanji" lang="ja">技</span><span aria-hidden="true" class="tech-temple"></span><div class="tech-icon"><svg aria-hidden="true" viewbox="0 0 64 64"><path d="M24 16 8 32l16 16M40 16l16 16-16 16M36 10 28 54"></path></svg></div><small>UI / FRONTEND</small></div>
+<div class="tech-copy"><span class="tech-category">FRONT-END</span><h3>Front-end</h3><p class="tech-stack">HTML5, CSS3, JavaScript e React</p><p class="tech-desc">Criação visual e interfaces responsivas.</p><a class="tech-link" data-skill-filter="sites" href="#projects">EXPLORAR PROJETOS ↗</a></div>
+</article><article class="skill-card tech-panel tone-cyan" data-reveal="" data-tilt="">
+<div class="tech-art"><span class="tech-index">02 / 04</span><span class="tech-corner"></span><span class="tech-circle"></span><span class="tech-radar"></span><span aria-hidden="true" class="tech-kanji" lang="ja">構</span><span aria-hidden="true" class="tech-temple"></span><div class="tech-icon"><svg aria-hidden="true" viewbox="0 0 64 64"><rect height="18" rx="2" width="42" x="11" y="12"></rect><rect height="18" rx="2" width="42" x="11" y="34"></rect><path d="M18 21h2m5 0h2M18 43h2m5 0h2M35 21h11M35 43h11"></path></svg></div><small>API / BACKEND</small></div>
+<div class="tech-copy"><span class="tech-category">BACK-END</span><h3>Back-end</h3><p class="tech-stack">Node.js, PHP e Python</p><p class="tech-desc">Lógica, rotas e soluções web.</p><a class="tech-link" data-skill-filter="sistemas" href="#projects">EXPLORAR PROJETOS ↗</a></div>
+</article><article class="skill-card tech-panel tone-red" data-reveal="" data-tilt="">
+<div class="tech-art"><span class="tech-index">03 / 04</span><span class="tech-corner"></span><span class="tech-circle"></span><span class="tech-radar"></span><span aria-hidden="true" class="tech-kanji" lang="ja">記</span><span aria-hidden="true" class="tech-temple"></span><div class="tech-icon"><svg aria-hidden="true" viewbox="0 0 64 64"><ellipse cx="32" cy="15" rx="20" ry="7"></ellipse><path d="M12 15v15c0 9 40 9 40 0V15M12 30v17c0 9 40 9 40 0V30"></path><path d="M12 30c0 9 40 9 40 0"></path></svg></div><small>SQL / DATABASE</small></div>
+<div class="tech-copy"><span class="tech-category">DADOS</span><h3>Banco de Dados</h3><p class="tech-stack">MySQL, PostgreSQL e Oracle SQL</p><p class="tech-desc">Organização e consultas de dados.</p><a class="tech-link" data-skill-filter="sistemas" href="#projects">EXPLORAR PROJETOS ↗</a></div>
+</article><article class="skill-card tech-panel tone-cyan" data-reveal="" data-tilt="">
+<div class="tech-art"><span class="tech-index">04 / 04</span><span class="tech-corner"></span><span class="tech-circle"></span><span class="tech-radar"></span><span aria-hidden="true" class="tech-kanji" lang="ja">道</span><span aria-hidden="true" class="tech-temple"></span><div class="tech-icon"><svg aria-hidden="true" viewbox="0 0 64 64"><rect height="24" rx="3" width="24" x="20" y="20"></rect><path d="M27 12v8m10-8v8M27 44v8m10-8v8M12 27h8m-8 10h8m24-10h8m-8 10h8"></path></svg></div><small>GIT / TOOLCHAIN</small></div>
+<div class="tech-copy"><span class="tech-category">FERRAMENTAS</span><h3>Ferramentas</h3><p class="tech-stack">Git, GitHub e VS Code</p><p class="tech-desc">Fluxo de trabalho e versionamento.</p><a class="tech-link" href="https://github.com/WillianF3" rel="noopener noreferrer" target="_blank">VER GITHUB ↗</a></div>
+</article></div></section>
+<!-- Projetos -->
+<!-- Processo: efeito de cards no scroll, integrado ao tema Samurai Cyberpunk -->
+<section class="process-effect-section" id="processo" data-effect="processo-cards-scroll-reveal" aria-labelledby="processo-titulo">
+  <div class="process-effect-grid-lines" aria-hidden="true"><div class="process-effect-center-rails"></div></div>
+  <div class="process-effect-inner">
+    <div class="process-effect-kicker"><span>etapas</span><span>04 blocos</span></div>
+    <div class="process-effect-main process-effect-grid">
+      <div class="process-effect-copy">
+        <div class="process-effect-title-wrap">
+          <div class="process-effect-title-bg" aria-hidden="true"></div>
+          <h2 class="effect-title split-text" id="processo-titulo">Em cada <br>fase do <br>projeto</h2>
         </div>
-
-        <div class="about-card">
-          <span class="card-icon">🎓</span>
-          <h3>Ciência da Computação</h3>
-          <p>Universidade do Oeste de Santa Catarina</p>
-          <span class="status">Em formação</span>
+        <div class="process-effect-copy-grid process-effect-grid">
+          <p class="effect-subtitle split-text">Do planejamento à entrega, organizo cada etapa para criar experiências web úteis, responsivas e com atenção aos detalhes.</p>
         </div>
       </div>
-    </section>
-
-    <!-- Tecnologias -->
-    <section id="skills" class="section-container skills-section">
-
-      <div class="section-heading">
-        <span class="section-label">02 / TECNOLOGIAS</span>
-        <h2>Tecnologias que <span>estudo e utilizo.</span></h2>
-        <p>Ferramentas e tecnologias que utilizo nos meus estudos e projetos.</p>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <span class="skill-icon">⌘</span>
-          <h3>Front-end</h3>
-          <p>HTML5, CSS3, JavaScript e React</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-icon">{ }</span>
-          <h3>Back-end</h3>
-          <p>Node.js, PHP e Python</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-icon">▤</span>
-          <h3>Banco de Dados</h3>
-          <p>MySQL, PostgreSQL e Oracle SQL</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-icon">⌥</span>
-          <h3>Ferramentas</h3>
-          <p>Git, GitHub e VS Code</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projects" class="section-container">
-
-      <div class="section-heading">
-        <span class="section-label">03 / PORTFÓLIO</span>
-        <h2>Projetos em <span>destaque.</span></h2>
-        <p>Projetos práticos com foco em interface, lógica e funcionalidade. Os links abrem em uma nova aba.</p>
-      </div>
-
-      <div class="project-filters" role="group" aria-label="Filtrar projetos">
-        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">Todos</button>
-        <button class="filter-btn" data-filter="front-end" aria-pressed="false">Front-end</button>
-        <button class="filter-btn" data-filter="javascript" aria-pressed="false">JavaScript</button>
-      </div>
-      <p id="project-filter-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true">Exibindo 3 projetos.</p>
-      <div class="projects-grid" id="project-results" aria-label="Lista de projetos">
-
-        <article class="project-tile" data-category="front-end javascript">
-          <div class="project-image project-one">
-            <span>01</span>
-            <strong>Lili Body Piercer</strong>
-          </div>
-
-          <div class="project-content">
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <h3>Lili Body Piercer</h3>
-
-            <p>
-              Site com catálogo de piercings, filtros de produtos,
-              visualização rápida e contato via WhatsApp. Layout adaptado para celular.
-            </p>
-
-            <a href="https://lilibody.com/"
-               target="_blank"
-               rel="noopener noreferrer">
-              Acessar site ↗
-            </a>
-            <a class="project-secondary-link" href="https://github.com/WillianF3/Lili-Teixeira-Body-Piercer" target="_blank" rel="noopener noreferrer">Ver código no GitHub ↗</a>
-          </div>
+      <div class="process-effect-cards">
+        <article class="effect-card">
+          <div class="effect-card-heading"><h3>Planejamento</h3><span>01</span></div>
+          <hr><p>Defina objetivos, prioridades e o escopo principal antes de avancar para a execucao.</p><hr>
         </article>
-
-        <article class="project-tile" data-category="javascript">
-          <div class="project-image project-two">
-            <span>02</span>
-            <strong>Simulador de Filas</strong>
-          </div>
-
-          <div class="project-content">
-            <div class="project-tags">
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-            </div>
-
-            <h3>Simulador de Filas</h3>
-
-            <p>
-              Ferramenta para simular chegadas e atendimentos e calcular
-              fila média, espera, ociosidade e utilização, com gráficos de resultados.
-            </p>
-
-            <a href="https://github.com/WillianF3"
-               target="_blank"
-               rel="noopener noreferrer">
-              Explorar GitHub ↗
-            </a>
-          </div>
+        <article class="effect-card">
+          <div class="effect-card-heading"><h3>Alinhamento</h3><span>02</span></div>
+          <hr><p>Organize expectativas, papeis e fluxo de informacoes entre todas as pessoas envolvidas.</p><hr>
         </article>
-
-        <article class="project-tile" data-category="front-end">
-          <div class="project-image project-three">
-            <span>03</span>
-            <strong>Projetos Web</strong>
-          </div>
-
-          <div class="project-content">
-            <div class="project-tags">
-              <span>Front-end</span>
-              <span>Back-end</span>
-              <span>SQL</span>
-            </div>
-
-            <h3>Projetos e Estudos</h3>
-
-            <p>
-              Exercícios e aplicações de HTML, CSS, JavaScript, PHP
-              e banco de dados. Os repositórios reúnem estudos e experimentos.
-            </p>
-
-            <a href="https://github.com/WillianF3"
-               target="_blank"
-               rel="noopener noreferrer">
-              Ver repositórios ↗
-            </a>
-          </div>
+        <article class="effect-card">
+          <div class="effect-card-heading"><h3>Execucao</h3><span>03</span></div>
+          <hr><p>Conduza as entregas com clareza, mantendo ritmo, controle e acompanhamento continuo.</p><hr>
         </article>
-
+        <article class="effect-card">
+          <div class="effect-card-heading"><h3>Entrega</h3><span>04</span></div>
+          <hr><p>Consolide resultados, documente aprendizados e prepare os proximos passos do trabalho.</p><hr>
+        </article>
       </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contact" class="contact-section">
-
-      <div class="contact-content">
-        <span class="section-label">04 / CONTATO</span>
-
-        <h2>Quer conversar sobre <span>tecnologia?</span></h2>
-
-        <p>
-          Busco oportunidades de estágio ou desenvolvimento júnior.
-          Você pode ver meu código no GitHub ou entrar em contato pelo LinkedIn.
-        </p>
-
-        <div class="contact-buttons">
-          <a id="profile-link"
-             href="https://github.com/WillianF3"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn btn-primary">
-            Meu GitHub ↗
-          </a>
-
-          <a href="https://www.linkedin.com/in/willian-ferreira-a09730219"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn btn-outline">
-            LinkedIn ↗
-          </a>
-        </div>
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>© 2026 Willian Ferreira. Desenvolvido com HTML5, CSS3 e JavaScript.</p>
-    <div class="footer-links">
-      <a href="privacidade.html">Privacidade</a>
-      <a href="#welcome-section">Voltar ao topo ↑</a>
     </div>
-  </footer>
-  <button id="back-to-top" type="button" hidden aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
-
-<script type="module" src="js/main.js"></script>
+  </div>
+</section>
+<!-- Projetos -->
+<section class="section-container" id="projects"><div class="section-head dual-heading"><div><span class="section-label">04 // PROJETOS EM DESTAQUE</span><h2>Aplicações reais<br/><span>com propósito.</span></h2></div><div class="section-head-aside"><p>Veja sites, aplicações e estudos presentes também no meu <a href="https://github.com/WillianF3" rel="noopener noreferrer" target="_blank">GitHub</a>, entre estudos, experiências web e soluções para clientes.</p><a class="mini-outline" href="https://github.com/WillianF3" rel="noopener noreferrer" target="_blank">TODOS OS REPOSITÓRIOS ↗</a></div></div><div aria-label="Filtrar projetos" class="project-filters" role="group">
+<button type="button" aria-pressed="true" class="filter-btn is-active" data-filter="all">TODOS</button>
+<button type="button" aria-pressed="false" class="filter-btn" data-filter="sites">SITES</button>
+<button type="button" aria-pressed="false" class="filter-btn" data-filter="sistemas">SISTEMAS</button></div><p aria-atomic="true" aria-live="polite" class="sr-only" id="project-filter-status" role="status">5 projetos exibidos.</p>
+<div aria-label="Lista de projetos" class="projects-grid cyber-projects" id="project-results"><div class="project-column featured-project"><article class="project-tile card project-panel h-100 project-ferrari" data-category="javascript full-stack sistemas" data-reveal="" data-tilt="">
+<div class="project-image project-art"><div aria-hidden="true" class="art-rings"></div><span aria-hidden="true" class="art-red-sun"></span><span aria-hidden="true" class="art-kanji" lang="ja">戦</span><span aria-hidden="true" class="art-hills"></span><div class="art-top"><span>01 <i></i> AIRSOFT / WEB APP</span><span class="art-arrow">↗</span></div><strong class="art-title">CAMPO FERRARI</strong><small class="art-caption">PROJETO PRINCIPAL</small></div>
+<div class="project-content"><span class="project-eyebrow">PROJETO PRINCIPAL</span><h3>Campo Ferrari</h3><p>Site do Campo Ferrari Airsoft em Videira (SC), com apresentação do campo e funcionalidades voltadas a partidas, participantes e reservas.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div><div class="project-links"><a class="project-primary-link" href="https://campoferrari.com.br/" rel="noopener noreferrer" target="_blank">VISITAR SITE ↗</a><a class="project-secondary-link" href="https://github.com/WillianF3/Campo_Ferrari" rel="noopener noreferrer" target="_blank">VER CÓDIGO ↗</a></div></div>
+</article></div><div class="project-column"><article class="project-tile card project-panel h-100 project-lili" data-category="front-end javascript sites" data-reveal="" data-tilt="">
+<div class="project-image project-art"><div aria-hidden="true" class="art-rings"></div><span aria-hidden="true" class="art-red-sun"></span><span aria-hidden="true" class="art-kanji" lang="ja">美</span><span aria-hidden="true" class="art-hills"></span><div class="art-top"><span>02 <i></i> CATÁLOGO / LANDING PAGE</span><span class="art-arrow">↗</span></div><strong class="art-title">LILI BODY</strong><small class="art-caption">PROJETO WEB</small></div>
+<div class="project-content"><span class="project-eyebrow">PROJETO WEB</span><h3>Lili Body Piercer</h3><p>Catálogo responsivo com filtros, visualização de produtos e integração com WhatsApp e Instagram.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div><div class="project-links"><a class="project-primary-link" href="https://lilibody.com/" rel="noopener noreferrer" target="_blank">VISITAR SITE ↗</a><a class="project-secondary-link" href="https://github.com/WillianF3/Lili-Teixeira-Body-Piercer" rel="noopener noreferrer" target="_blank">VER CÓDIGO ↗</a></div></div>
+</article></div><div class="project-column"><article class="project-tile card project-panel h-100 project-martelli" data-category="front-end javascript sites" data-reveal="" data-tilt="">
+<div class="project-image project-art"><div aria-hidden="true" class="art-rings"></div><span aria-hidden="true" class="art-red-sun"></span><span aria-hidden="true" class="art-kanji" lang="ja">匠</span><span aria-hidden="true" class="art-hills"></span><div class="art-top"><span>03 <i></i> LANDING / BRANDING</span><span class="art-arrow">↗</span></div><strong class="art-title">MARTELLI</strong><small class="art-caption">EM DESENVOLVIMENTO</small></div>
+<div class="project-content"><span class="project-eyebrow">EM DESENVOLVIMENTO</span><h3>Martelli Barbearia</h3><p>Landing page de lançamento com identidade italiana, animações CSS e ilustrações SVG. Em desenvolvimento.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SVG</span></div><div class="project-links"><a class="project-secondary-link" href="https://github.com/WillianF3/martellibarbearia" rel="noopener noreferrer" target="_blank">VER CÓDIGO ↗</a></div></div>
+</article></div><div class="project-column"><article class="project-tile card project-panel h-100 project-apex" data-category="front-end academico sites" data-reveal="" data-tilt="">
+<div class="project-image project-art"><div aria-hidden="true" class="art-rings"></div><span aria-hidden="true" class="art-red-sun"></span><span aria-hidden="true" class="art-kanji" lang="ja">学</span><span aria-hidden="true" class="art-hills"></span><div class="art-top"><span>04 <i></i> FACULDADE / WEB</span><span class="art-arrow">↗</span></div><strong class="art-title">APEX</strong><small class="art-caption">PROJETO ACADÊMICO</small></div>
+<div class="project-content"><span class="project-eyebrow">PROJETO ACADÊMICO</span><h3>Apex · Unoesc</h3><p>Projeto acadêmico de desenvolvimento web com páginas, formulários e organização de interfaces.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>Acadêmico</span></div><div class="project-links"><a class="project-secondary-link" href="https://github.com/WillianF3/Apex-Unoesc" rel="noopener noreferrer" target="_blank">VER CÓDIGO ↗</a></div></div>
+</article></div><div class="project-column"><article class="project-tile card project-panel h-100 project-portfolio" data-category="front-end javascript sites" data-reveal="" data-tilt="">
+<div class="project-image project-art"><div aria-hidden="true" class="art-rings"></div><span aria-hidden="true" class="art-red-sun"></span><span aria-hidden="true" class="art-kanji" lang="ja">道</span><span aria-hidden="true" class="art-hills"></span><div class="art-top"><span>05 <i></i> PORTFÓLIO / WEB</span><span class="art-arrow">↗</span></div><strong class="art-title">DEVWILLIAN</strong><small class="art-caption">PORTFÓLIO PESSOAL</small></div>
+<div class="project-content"><span class="project-eyebrow">PORTFÓLIO PESSOAL</span><h3>DevWillian</h3><p>Portfólio pessoal com navegação responsiva, apresentação de projetos, certificados e efeitos visuais.</p><div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div><div class="project-links"><a class="project-primary-link" href="https://devwillian.com/" rel="noopener noreferrer" target="_blank">VISITAR SITE ↗</a><a class="project-secondary-link" href="https://github.com/WillianF3/devwillian.com" rel="noopener noreferrer" target="_blank">VER CÓDIGO ↗</a></div></div>
+</article></div></div><div class="projects-foot"><span>技術 × 創造 // CÓDIGO E CRIATIVIDADE</span><a href="https://github.com/WillianF3" rel="noopener noreferrer" target="_blank">EXPLORAR GITHUB ↗</a></div></section><section class="section-container certs-highlight" id="certifications"><div class="section-head dual-heading"><div><span class="section-label">05 // CERTIFICAÇÕES</span><h2>Aprendizado em<br/><span>constante evolução.</span></h2></div><div class="section-head-aside"><p>Certificados apresentados com suas imagens originais, organizados em desenvolvimento, dados, inteligência artificial e outras áreas.</p><a class="mini-outline" href="certificados.html">VER TODOS OS CERTIFICADOS ↗</a></div></div><div class="highlight-grid"><a class="highlight-card" data-reveal="" href="certificados.html#certificado-01"><div class="highlight-thumbnail"><img alt="Miniatura do certificado Formação Full Stack JavaScript" decoding="async" height="255" loading="lazy" src="imagens/certificados/Forma%23U00e7%23U00e3o%20Full%20Stack%20JavaScript-1.png" width="360"/></div><div class="highlight-body"><small>ONEBITCODE // 20/10/2026</small><h3>Formação Full Stack JavaScript</h3><span>VER CERTIFICADO ↗</span></div></a><a class="highlight-card" data-reveal="" href="certificados.html#certificado-07"><div class="highlight-thumbnail"><img alt="Miniatura do certificado Aplicações Web com NodeJs" decoding="async" height="255" loading="lazy" src="imagens/certificados/Aplica%23U00e7%23U00f5es%20Web%20com%20NodeJs-1.png" width="360"/></div><div class="highlight-body"><small>ONEBITCODE // 20/10/2026</small><h3>Aplicações Web com NodeJs</h3><span>VER CERTIFICADO ↗</span></div></a><a class="highlight-card" data-reveal="" href="certificados.html#certificado-02"><div class="highlight-thumbnail"><img alt="Miniatura do certificado Banco de Dados SQL" decoding="async" height="255" loading="lazy" src="imagens/certificados/Forma%23U00e7%23U00e3o%20Full%20Stack%20JavaScript%20%23U2022%20Banco%20de%20Dados%20SQL-1.png" width="360"/></div><div class="highlight-body"><small>ONEBITCODE // 20/10/2026</small><h3>Banco de Dados SQL</h3><span>VER CERTIFICADO ↗</span></div></a><a class="highlight-card" data-reveal="" href="certificados.html#certificado-27"><div class="highlight-thumbnail"><img alt="Miniatura do certificado Agentes de IA e Automação: Como Montar um Time Digital que Trabalha por Você" decoding="async" height="255" loading="lazy" src="imagens/certificados/Agentes%20de%20IA%20e%20Automa%23U00e7%23U00e3o%20Como%20Montar%20um%20Time%20Digital%20que%20Trabalha%20por%20Voc%23U00ea%20Edson%20Martins-1.png" width="360"/></div><div class="highlight-body"><small>GRUPO VOITTO // 14/10/2026</small><h3>Agentes de IA e Automação: Como Montar um Time Digital que Trabalha por Você</h3><span>VER CERTIFICADO ↗</span></div></a></div><p class="certificate-note">Os certificados são arquivos presentes neste projeto, não credenciais verificadas automaticamente pelo GitHub.</p></section>
+<!-- Contato -->
+<section class="ux-proof" aria-labelledby="ux-proof-title">
+  <div class="ux-proof-inner">
+    <div><span class="section-label">PROJETOS REAIS</span><h2 id="ux-proof-title">Veja o trabalho <span>na prática.</span></h2><p>Conheça exemplos de soluções desenvolvidas para necessidades diferentes — sem promessas ou números inventados.</p></div>
+    <div class="ux-proof-links"><a href="https://campoferrari.com.br/" target="_blank" rel="noopener noreferrer"><strong>Campo Ferrari</strong><small>Reservas e organização de jogos ↗</small></a><a href="https://lilibody.com/" target="_blank" rel="noopener noreferrer"><strong>Lili Body</strong><small>Catálogo e contato facilitado ↗</small></a></div>
+  </div>
+</section>
+<section class="ux-next-steps" aria-labelledby="ux-next-title">
+  <span class="section-label">SIMPLES, DO INÍCIO À CONVERSA</span>
+  <h2 id="ux-next-title">Seu próximo projeto começa <span>com uma conversa.</span></h2>
+  <div class="ux-steps-grid">
+    <div class="ux-step"><span>01</span><strong>Conheça meus projetos</strong><p>Veja exemplos de sites e sistemas que já desenvolvi.</p></div>
+    <div class="ux-step"><span>02</span><strong>Conte sua ideia</strong><p>Explique brevemente o que o seu negócio precisa.</p></div>
+    <div class="ux-step"><span>03</span><strong>Vamos conversar</strong><p>Alinhamos as possibilidades e os próximos passos.</p></div>
+  </div>
+</section>
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="contact-content">
+    <span class="section-label">CONTATO / PRÓXIMO PASSO</span>
+    <h2 id="contact-title">Vamos tirar sua <span>ideia do papel?</span></h2>
+    <p>Conte o que você deseja criar. Podemos conversar sobre sites, agendamentos, sistemas e soluções personalizadas.</p>
+    <a class="ux-contact-primary" href="https://wa.me/554998347453?text=Ol%C3%A1%2C%20Willian%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20web." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.5 0 .2 5.3.2 11.8c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4h0c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.3-8.4ZM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 1 1 8.5 4.7Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1-1.7-.8-2.8-1.6-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.1.2 2.2 3.4 5.3 4.7 2 .9 2.8 1 3.8.8-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4Z"></path></svg> FALAR SOBRE MEU PROJETO <span aria-hidden="true">↗</span></a>
+    <div class="ux-career-contact"><span>VOCÊ É RECRUTADOR(A)?</span><p>Também estou aberto a oportunidades de estágio e desenvolvimento júnior em TI.</p><div><a href="https://www.linkedin.com/in/willian-ferreira-a09730219" target="_blank" rel="noopener noreferrer">VER LINKEDIN ↗</a><a href="https://github.com/WillianF3" id="profile-link" target="_blank" rel="noopener noreferrer">EXPLORAR GITHUB ↗</a></div></div>
+  </div>
+</section>
+</main>
+<!-- Rodapé -->
+<footer>
+<p>© 2026 Willian Ferreira. Desenvolvido com HTML5, Bootstrap e JavaScript orientado a objetos.</p>
+<div class="footer-links">
+<a href="privacidade.html">Privacidade</a>
+<a href="#welcome-section">Voltar ao topo ↑</a>
+</div>
+</footer>
+<button aria-label="Voltar ao topo" hidden="" id="back-to-top" title="Voltar ao topo" type="button">↑</button>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/main.js?v=20261103-01" type="module"></script>
+<nav aria-label="Contato rápido" class="social-shortcuts"><a aria-label="Falar sobre um projeto no WhatsApp (abre em nova aba)" class="social-shortcut" href="https://wa.me/554998347453?text=Ol%C3%A1%2C%20Willian%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20web." rel="noopener noreferrer" target="_blank" title="Falar sobre meu projeto"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.5 0 .2 5.3.2 11.8c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4h0c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.3-8.4ZM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 1 1 8.5 4.7Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1-1.7-.8-2.8-1.6-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.1.2 2.2 3.4 5.3 4.7 2 .9 2.8 1 3.8.8.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4Z"></path></svg><span>Falar sobre meu projeto</span></a></nav>
+<script src="js/samurai-experience.js?v=20261023-06" type="module"></script>
+<!-- GSAP apenas no desktop: no celular o Processo permanece totalmente legível, sem baixar as bibliotecas pesadas. -->
+<script>
+(() => {
+  if (!window.matchMedia('(min-width: 1024px) and (prefers-reduced-motion: no-preference)').matches) return;
+  const sources = [
+    'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js',
+    'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js',
+    'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js',
+    'js/processo-cards-scroll-reveal.js?v=20261029-02'
+  ];
+  // Scripts dinâmicos com async=false mantêm a ordem de execução.
+  sources.forEach(src => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = false;
+    document.body.appendChild(script);
+  });
+})();
+</script><script src="js/flowers-futuristic-adaptado.js?v=20261103-01" defer></script><script src="js/hero-cyberpunk-motion.js?v=20261103-01" defer></script>
 </body>
 </html>

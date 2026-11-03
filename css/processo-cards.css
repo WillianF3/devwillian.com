@@ -1,0 +1,190 @@
+/* Processo — DevWillian V6 | inspirado no bloco de 4 cards da build fornecida.
+   Mantém o layout editorial e a animação, mas usa exclusivamente a identidade
+   Samurai Cyberpunk original: azul-preto, creme, vermelho e ciano. */
+.samurai-ui .process-effect-section {
+  --process-bg: var(--night);
+  --process-card: #101d25;
+  --process-text: var(--cream);
+  --process-accent: var(--red);
+  --process-detail: var(--cyan);
+  --process-border: #285363;
+  --effect-gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4.25rem, 7vw, 7rem) 0 3.75rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--process-bg);
+  color: var(--process-text);
+  font-family: var(--display);
+}
+.samurai-ui .process-effect-section .process-effect-inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1600px);
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+.samurai-ui .process-effect-section .process-effect-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font: 700 .75rem/1 var(--mono);
+  text-transform: uppercase;
+  color: var(--process-detail);
+  letter-spacing: 0;
+}
+.samurai-ui .process-effect-section .process-effect-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: var(--effect-gap);
+}
+.samurai-ui .process-effect-section .process-effect-main { margin-top: 3.125rem; align-items: start; }
+.samurai-ui .process-effect-section .process-effect-copy { grid-column: 1 / -1; min-width: 0; }
+.samurai-ui .process-effect-section .process-effect-title-wrap { position: relative; isolation: isolate; }
+.samurai-ui .process-effect-section .process-effect-title-bg {
+  position: absolute;
+  top: 50%; left: 0;
+  z-index: -1;
+  width: 100%; height: 50%;
+  transform: translateY(-50%);
+  background: var(--process-bg);
+}
+.samurai-ui .process-effect-section .effect-title {
+  margin: 0;
+  font: 850 clamp(4.5rem, 17vw, 10rem)/.94 var(--display);
+  letter-spacing: 0;
+  color: var(--process-text);
+  white-space: nowrap;
+}
+.samurai-ui .process-effect-section .effect-title::first-line { color: var(--process-text); }
+.samurai-ui .process-effect-section .process-effect-copy-grid { margin: 0; }
+.samurai-ui .process-effect-section .effect-subtitle {
+  grid-column: 2 / -1;
+  max-width: 28rem;
+  margin: 5rem 0 0;
+  font: 400 .875rem/1.55 var(--display);
+  letter-spacing: 0;
+  color: #b6c8d1;
+}
+.samurai-ui .process-effect-section .process-effect-cards {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-content: start;
+  grid-column: 1 / -1;
+  row-gap: 1.25em;
+  margin-top: 4.125rem;
+  min-width: 0;
+}
+.samurai-ui .process-effect-section .effect-card {
+  grid-column: 1 / -1;
+  min-width: 0;
+  background: var(--process-card);
+  color: var(--process-text);
+  border: 1px solid var(--process-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: .625rem 1rem 1.25rem;
+  will-change: transform;
+  transform-origin: center center;
+  letter-spacing: 0;
+}
+.samurai-ui .process-effect-section .effect-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.samurai-ui .process-effect-section .effect-card-heading h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: 0;
+}
+.samurai-ui .process-effect-section .effect-card-heading span {
+  flex-shrink: 0;
+  font: 700 .875rem/1 var(--mono);
+  color: var(--process-detail);
+}
+.samurai-ui .process-effect-section .effect-card hr {
+  opacity: 1;
+  height: 0;
+  border: 0;
+  border-top: 1px solid var(--process-accent);
+  margin: .5rem 0 1.25rem;
+}
+.samurai-ui .process-effect-section .effect-card hr:last-child { margin: 1.75rem 0 0; }
+.samurai-ui .process-effect-section .effect-card p {
+  max-width: 22rem;
+  margin: 0;
+  padding-right: 1.5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  color: #c2d0d6;
+}
+.samurai-ui .process-effect-section .process-effect-grid-lines { display: none; }
+.samurai-ui .process-effect-section .split-text { font-kerning: none; text-rendering: optimizeSpeed; }
+.samurai-ui .process-effect-section .line-split { margin-bottom: -.1em; padding-bottom: .1em; }
+@media (min-width: 1024px) {
+  .samurai-ui .process-effect-section { --effect-gap: clamp(1.75rem, 3.65vw, 3.75rem); padding-bottom: 10rem; }
+  .samurai-ui .process-effect-section .process-effect-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .samurai-ui .process-effect-section .process-effect-main { margin-top: 5.625rem; }
+  .samurai-ui .process-effect-section .process-effect-copy { grid-column: span 6 / span 6; }
+  .samurai-ui .process-effect-section .effect-title { font-size: clamp(5.5rem, 10.5vw, 10rem); }
+  .samurai-ui .process-effect-section .effect-subtitle {
+    grid-column: 2 / span 4;
+    margin-top: 2.875rem;
+    padding-right: 1.5rem;
+  }
+  .samurai-ui .process-effect-section .process-effect-cards {
+    grid-column: 7 / span 6;
+    grid-template-columns: subgrid;
+    margin-top: 0;
+    row-gap: 2em;
+  }
+  .samurai-ui .process-effect-section .effect-card {
+    grid-column: span 4 / span 4;
+    padding: .625rem 1.375rem 1.375rem;
+  }
+  .samurai-ui .process-effect-section .effect-card-heading { font-size: 1.875rem; }
+  .samurai-ui .process-effect-section .effect-card p { padding-right: 1rem; }
+  .samurai-ui .process-effect-section .process-effect-grid-lines {
+    display: grid;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--effect-gap);
+    padding-inline: max(var(--page-gutter), calc((100vw - 1600px) / 2 + var(--page-gutter)));
+  }
+  .samurai-ui .process-effect-section .process-effect-center-rails {
+    grid-column: 5 / span 4;
+    border-inline: 1px solid #285363;
+  }
+}
+/* Grade alternativa para navegadores sem suporte ao CSS subgrid. */
+@supports not (grid-template-columns: subgrid) {
+  @media (min-width: 1024px) {
+    .samurai-ui .process-effect-section .process-effect-cards {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      column-gap: var(--effect-gap);
+    }
+  }
+}
+@media (max-width: 400px) {
+  .samurai-ui .process-effect-section { --effect-gap: 1.5rem; }
+  .samurai-ui .process-effect-section .effect-title { font-size: clamp(3.75rem, 17vw, 5rem); }
+  .samurai-ui .process-effect-section .effect-subtitle { margin-top: 3rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .samurai-ui .process-effect-section .effect-card,
+  .samurai-ui .process-effect-section .split-text { transform: none!important; opacity: 1!important; }
+  .samurai-ui .process-effect-section .effect-card { will-change: auto; }
+}

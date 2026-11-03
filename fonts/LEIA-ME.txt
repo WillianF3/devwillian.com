@@ -1,0 +1,17 @@
+DEVWILLIAN V7 — FONTE KASHIMA BRUSH
+
+O CSS do site já está pronto para a fonte Kashima Brush Demo. A fonte NÃO está neste pacote.
+
+IMPORTANTE: o arquivo recebido se chama "Kashima Demo.otf" e o nome interno indica que é uma versão DEMO.
+Antes de publicar no seu site, confirme com o autor a licença de uso comercial e de incorporação web.
+
+Se a licença permitir:
+  1. Extraia o arquivo original "Kashima Demo.otf" do seu kashima_brush.zip.
+  2. Envie com o Gerenciador de Arquivos da Hostinger para public_html/fonts/Kashima Demo.otf.
+  3. Não mude as maiúsculas, espaços e extensão no nome.
+  4. Atualize a página (Ctrl+F5).
+
+A regra @font-face está em css/kashima-brush.css. Sem a fonte, o site continua legível usando Outfit como alternativa.
+
+O estilo anterior Modern Tokyo foi substituído pelos estilos Kashima Brush.
+Os menus, parágrafos, formulários e textos longos permanecem em Outfit.
