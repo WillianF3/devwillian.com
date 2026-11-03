@@ -1,0 +1,138 @@
+/*
+ * DevWillian V7 — identidade tipográfica Kashima Brush.
+ * A licença da fonte enviada é do autor; ela não é redistribuída no pacote.
+ * Depois de verificar a licença para web, envie o arquivo original da fonte
+ * para /fonts/Kashima Demo.otf na Hostinger (ou ajuste o caminho abaixo).
+ * Para navegadores que não têm o arquivo, a fonte Outfit é usada.
+ */
+@font-face {
+  font-family: "Kashima Brush Portfolio";
+  src: local("Kashima Brush Demo"), local("KashimaBrushDemo"),
+       url("../fonts/Kashima Demo.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --kashima-display: "Kashima Brush Portfolio", "Outfit", system-ui, sans-serif;
+}
+
+/* Uma fonte brush funciona melhor em assinaturas e títulos de destaque.
+   Textos de leitura, menus, botões e formulários continuam legíveis em Outfit. */
+.samurai-ui #navbar .logo,
+.samurai-ui .hero-intro h1,
+.samurai-ui .hero-side-panel h2,
+.samurai-ui .section-heading h2,
+.samurai-ui .dual-heading h2,
+.samurai-ui .contact-content h2,
+.samurai-ui .project-art .art-title,
+.samurai-ui #projects .project-content h3,
+.samurai-ui .certificates-intro h1,
+.samurai-ui .library-top h2,
+.samurai-ui .certificate-contact h2,
+.samurai-ui .legal-content h1 {
+  font-family: var(--kashima-display);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .015em;
+  text-transform: none;
+}
+
+/* Marca e chamada principal: reduzir a escala para respeitar os traços da fonte. */
+.samurai-ui #navbar .logo {
+  font-size: clamp(34px, 3vw, 46px);
+  line-height: 1.05;
+  letter-spacing: .025em;
+}
+.samurai-ui #navbar .brand-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .065em;
+  font-weight: 700;
+}
+.samurai-ui .hero-intro h1 {
+  font-size: clamp(86px, 11.3vw, 176px);
+  line-height: 1.08;
+  letter-spacing: .005em;
+  white-space: nowrap;
+  margin-bottom: clamp(24px, 3.5vw, 48px);
+  padding-block: .06em .1em;
+}
+.samurai-ui .hero-intro .hero-dot {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 800;
+}
+
+/* Titulares da home e da galeria. Evita a antiga compressão das letras. */
+.samurai-ui .hero-side-panel h2,
+.samurai-ui .section-heading h2,
+.samurai-ui .dual-heading h2,
+.samurai-ui .contact-content h2,
+.samurai-ui .certificates-intro h1,
+.samurai-ui .library-top h2,
+.samurai-ui .certificate-contact h2,
+.samurai-ui .legal-content h1 {
+  line-height: 1.15;
+  letter-spacing: .01em;
+  overflow-wrap: break-word;
+  padding-block: .04em .08em;
+}
+.samurai-ui .hero-side-panel h2 { font-size: clamp(36px, 3.8vw, 62px); }
+.samurai-ui .section-heading h2,
+.samurai-ui .dual-heading h2 { font-size: clamp(43px, 5vw, 80px); }
+.samurai-ui .contact-content h2 { font-size: clamp(44px, 5.6vw, 88px); }
+.samurai-ui .certificates-intro h1 { font-size: clamp(57px, 6.6vw, 104px); }
+.samurai-ui .library-top h2 { font-size: clamp(36px, 4vw, 58px); }
+.samurai-ui .certificate-contact h2 { font-size: clamp(40px, 4.6vw, 76px); }
+.samurai-ui .legal-content h1 { font-size: clamp(52px, 7vw, 100px); }
+
+/* Nomes de projetos, onde brush combina com a estética samurai. */
+.samurai-ui #projects .project-content h3 {
+  font-size: clamp(33px, 3vw, 51px);
+  line-height: 1.15;
+  letter-spacing: .012em;
+  overflow-wrap: break-word;
+}
+.samurai-ui .project-art .art-title {
+  font-size: clamp(38px, 4.2vw, 68px);
+  line-height: 1.07;
+  letter-spacing: .006em;
+  overflow-wrap: anywhere;
+}
+
+/* Cartões extensos, filtros e informações legais não usam brush para
+   manter legibilidade e acessibilidade em telas pequenas. */
+.samurai-ui .certificate-card h2,
+.samurai-ui .highlight-body h3,
+.samurai-ui .tech-copy h3,
+.samurai-ui .about-card h3,
+.samurai-ui .legal-content h2,
+.samurai-ui button,
+.samurai-ui input,
+.samurai-ui select,
+.samurai-ui textarea,
+.samurai-ui .nav-links,
+.samurai-ui p {
+  font-family: "Outfit", system-ui, sans-serif;
+}
+
+@media (max-width: 980px) {
+  .samurai-ui .hero-intro h1 { font-size: clamp(82px, 12.2vw, 135px); }
+}
+@media (max-width: 767px) {
+  .samurai-ui .hero-intro h1 { font-size: clamp(73px, 13vw, 105px); }
+  .samurai-ui .section-heading h2,
+  .samurai-ui .dual-heading h2 { font-size: clamp(36px, 8vw, 60px); }
+  .samurai-ui .hero-side-panel h2 { font-size: clamp(36px, 8vw, 55px); }
+  .samurai-ui .certificates-intro h1 { font-size: clamp(48px, 9vw, 76px); }
+  .samurai-ui .project-art .art-title { font-size: clamp(32px, 7vw, 56px); }
+}
+@media (max-width: 540px) {
+  .samurai-ui #navbar .logo { font-size: 37px; }
+  .samurai-ui .hero-intro h1 { font-size: clamp(60px, 16vw, 88px); }
+  .samurai-ui .section-heading h2,
+  .samurai-ui .dual-heading h2 { font-size: clamp(34px, 9vw, 50px); }
+  .samurai-ui .project-art .art-title { font-size: clamp(30px, 8vw, 49px); }
+  .samurai-ui .library-top h2 { font-size: clamp(32px, 8vw, 45px); }
+}

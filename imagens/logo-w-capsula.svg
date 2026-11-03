@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 8 50 36" role="img" aria-label="Logo W ponto vermelho">
+  <title>Logo DevWillian W.</title>
+  <!-- Silhueta vetorizada da logo W. fornecida como referência. -->
+  <path d="M 8,12 L 9,18 L 16,38 L 22,38 L 24,28 L 26,25 L 29,32 L 30,38 L 36,38 L 44,14 L 43,12 L 38,12 L 37,13 L 36,19 L 33,26 L 28,12 L 23,13 L 19,25 L 17,23 L 15,13 L 14,12 Z" fill="#f4f2eb"/>
+  <!-- Contorno escuro para o ponto vermelho continuar visível na cápsula vermelha. -->
+  <circle cx="46.5" cy="35" r="4.25" fill="#ff284e" stroke="#07111a" stroke-width="1.6"/>
+</svg>

@@ -1,0 +1,101 @@
+/*
+ * DevWillian V6 — Identidade tipografica Modern Tokyo
+ * A fonte foi enviada como referencia pelo proprietario do site.
+ * Por licenciamento/distribuicao, os arquivos de fonte nao integram este pacote.
+ * Publique os dois arquivos originais em /fonts/ conforme o LEIA-ME.
+ */
+@font-face {
+  font-family: "Modern Tokyo Portfolio";
+  src: local("Modern Tokyo Regular"), local("Modern Tokyo"),
+       url("../fonts/ModernTokyo.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  /* A fonte original nao inclui numeros, sinais e letras acentuadas. */
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "Modern Tokyo Portfolio";
+  src: local("Modern Tokyo Bold Regular"), local("Modern Tokyo Bold"),
+       url("../fonts/ModernTokyo-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+:root {
+  --tokyo-display: "Modern Tokyo Portfolio", "Outfit", "Arial Narrow", system-ui, sans-serif;
+}
+
+/* Titulos expressivos: sem modificar conteudos, sem afetar parágrafos e formularios. */
+.samurai-ui #navbar .logo {
+  font-family: var(--tokyo-display);
+  font-weight: 700;
+  letter-spacing: .012em;
+  font-size: clamp(30px, 3vw, 43px);
+}
+.samurai-ui #navbar .brand-label {
+  font-family: var(--mono);
+  letter-spacing: .065em;
+  font-size: 10px;
+}
+.samurai-ui .hero-intro h1 {
+  font-family: var(--tokyo-display);
+  font-weight: 700;
+  font-size: clamp(112px, 15.1vw, 234px);
+  line-height: .94;
+  letter-spacing: .004em;
+  white-space: nowrap;
+  margin-bottom: clamp(30px, 4vw, 62px);
+}
+.samurai-ui .hero-intro .hero-dot { font-family: "Outfit", sans-serif; }
+.samurai-ui .hero-side-panel h2,
+.samurai-ui .dual-heading h2,
+.samurai-ui .section-heading h2,
+.samurai-ui .contact-content h2,
+.samurai-ui .project-art .art-title,
+.samurai-ui #projects .project-content h3,
+.samurai-ui .certificates-intro h1,
+.samurai-ui .library-top h2,
+.samurai-ui .certificate-contact h2,
+.samurai-ui .legal-content h1 {
+  font-family: var(--tokyo-display);
+  font-weight: 700;
+  letter-spacing: .01em;
+  line-height: 1.12;
+  overflow-wrap: normal;
+}
+/* Cards com textos longos permanecem em Outfit para evitar titulos truncados. */
+.samurai-ui .certificate-card h2,
+.samurai-ui .highlight-body h3,
+.samurai-ui .tech-copy h3,
+.samurai-ui .legal-content h2 {
+  font-family: "Outfit", system-ui, sans-serif;
+  letter-spacing: -.02em;
+  line-height: 1.28;
+}
+.samurai-ui .hero-side-panel h2 { font-size: clamp(34px, 3.2vw, 57px); }
+.samurai-ui .dual-heading h2 { font-size: clamp(42px, 4.8vw, 76px); }
+.samurai-ui #projects .project-content h3 { font-size: clamp(31px, 2.7vw, 44px); }
+.samurai-ui .project-art .art-title { font-size: clamp(37px, 4.7vw, 75px); }
+.samurai-ui .certificates-intro h1 { font-size: clamp(55px, 6.4vw, 94px); }
+.samurai-ui .library-top h2 { font-size: clamp(32px, 3.4vw, 48px); }
+.samurai-ui .legal-content h1 { font-size: clamp(54px, 7vw, 96px); }
+
+/* Prevenir cortes de titulo quando o viewport encolher ou houver zoom. */
+@media (max-width: 980px) {
+  .samurai-ui .hero-intro h1 { font-size: clamp(90px, 17vw, 188px); }
+}
+@media (max-width: 767px) {
+  .samurai-ui .hero-intro h1 { font-size: clamp(82px, 17.1vw, 156px); }
+  .samurai-ui .dual-heading h2 { font-size: clamp(37px, 8vw, 62px); }
+  .samurai-ui .hero-side-panel h2 { font-size: clamp(36px, 7vw, 52px); }
+  .samurai-ui .certificates-intro h1 { font-size: clamp(48px, 9vw, 78px); }
+}
+@media (max-width: 540px) {
+  .samurai-ui .hero-intro h1 { font-size: clamp(76px, 20vw, 117px); }
+  .samurai-ui #navbar .logo { font-size: 34px; }
+  .samurai-ui .dual-heading h2 { font-size: clamp(35px, 9vw, 48px); }
+  .samurai-ui .project-art .art-title { font-size: clamp(30px, 9vw, 55px); }
+}

@@ -1,0 +1,142 @@
+/* DevWillian V7.7 – hero cyberpunk vivo.
+   Camadas SVG/CSS, retrato com transparência, partículas Canvas independentes.
+   Animações de projetos/scroll já existentes continuam em flowers-futuristic-adaptado.js. */
+.ff-cyberpunk-art {
+  background:radial-gradient(ellipse 55% 70% at 22% 32%,#25081a 0%,transparent 85%),
+             radial-gradient(ellipse 60% 65% at 83% 50%,#05343d 0%,transparent 78%),#03070c;
+  --ff-mouse-x:0px;--ff-mouse-y:0px;--ff-scroll-compress:0;
+}
+.ff-cyberpunk-art::before {
+  inset:0; height:auto;
+  background:repeating-linear-gradient(0deg,transparent 0 3px,#f2ffff02 4px 5px),
+             repeating-linear-gradient(90deg,transparent 0 82px,#d4faff08 83px,transparent 84px);
+  z-index:1;
+}
+.ff-cyberpunk-art::after { z-index:7;opacity:.08; }
+.ff-cyber-world { position:absolute;inset:0;z-index:1;overflow:hidden;isolation:isolate;pointer-events:none; }
+.ff-cyber-world::before {
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,#ff19420b,transparent 43%,#08dcec0b),
+             repeating-linear-gradient(90deg,#ffffff04 0 1px,transparent 1px 102px);
+}
+.ff-cyber-world::after {
+  content:"";position:absolute;inset:0;z-index:2;opacity:.28;
+  background:radial-gradient(ellipse at center,transparent 28%,#010207 95%);
+}
+.ff-cyber-sun {position:absolute;display:block;aspect-ratio:1;border-radius:50%;z-index:0;will-change:transform,opacity}
+.ff-cyber-sun--red {
+  width:clamp(420px,52vw,1000px);left:10%;top:-43%;
+  background:radial-gradient(circle at 50% 50%,#ff2454 0%,#bd113c 47%,#650827 68%,transparent 72%);
+  box-shadow:0 0 110px #ef164d35;opacity:.92;
+  animation:ffSunRed 13s ease-in-out infinite alternate;
+}
+.ff-cyber-sun--cyan {
+  width:clamp(420px,49vw,920px);right:-19%;top:16%;
+  background:radial-gradient(circle at 44% 44%,#08bcd2 0%,#037993 48%,#03384d 67%,transparent 73%);
+  box-shadow:0 0 100px #00d6eb1a;opacity:.84;
+  animation:ffSunCyan 15s ease-in-out infinite alternate;
+}
+.ff-cyber-glyph {
+  position:absolute;z-index:1;font:900 clamp(290px,44vw,740px)/1 sans-serif;
+  user-select:none;pointer-events:none;white-space:nowrap;will-change:transform;
+  text-shadow:0 0 15px currentColor;
+}
+.ff-cyber-glyph--red {left:3%;top:1%;color:#ff285c28;transform:rotate(-21deg);animation:ffGlyphRed 19s ease-in-out infinite alternate}
+.ff-cyber-glyph--cyan {right:-12%;bottom:-22%;color:#1cfaff24;transform:rotate(17deg);animation:ffGlyphCyan 23s ease-in-out infinite alternate}
+.ff-cyber-circuits {position:absolute;inset:0;width:100%;height:100%;z-index:2;opacity:.78;mix-blend-mode:screen;will-change:transform; transform:translate3d(var(--ff-circuit-x,0px),var(--ff-circuit-y,0px),0)}
+.ff-cyber-circuit-red {stroke:#ff295b;filter:drop-shadow(0 0 7px #ff1656)}
+.ff-cyber-circuit-cyan {stroke:#10e7fa;filter:drop-shadow(0 0 7px #08e7ff)}
+.ff-cyber-circuit-pink{stroke:#fa296e;filter:drop-shadow(0 0 9px #fa2a5c)}
+.ff-cyber-circuits path {stroke-dasharray:1300;stroke-dashoffset:1300;animation:ffDrawCircuit 4.5s cubic-bezier(.25,.5,.3,1) forwards,ffPulseCircuit 7s ease-in-out 4.5s infinite}
+.ff-cyber-circuit-cyan path{animation-delay:.45s,5s}
+.ff-cyber-circuit-pink path{animation-delay:1s,5.5s}
+.ff-cyber-outline{position:absolute;z-index:2;border:3px solid;opacity:.35;aspect-ratio:1;pointer-events:none;will-change:transform}
+.ff-cyber-outline--a{width:19%;left:8%;top:31%;border-color:#ff1c4d;transform:rotate(-21deg);box-shadow:0 0 18px #ff2a4f55;animation:ffOutlineA 13s ease-in-out infinite alternate}
+.ff-cyber-outline--b{width:13%;right:17%;top:21%;border-color:#0fe3f4;transform:rotate(27deg);box-shadow:0 0 18px #02c9e477;animation:ffOutlineB 15s ease-in-out infinite alternate}
+.ff-cyber-outline--c{width:9%;right:9%;top:38%;border-color:#10dcf3;opacity:.2;transform:rotate(-22deg);animation:ffOutlineA 20s ease-in-out infinite alternate}
+.ff-cyber-hud{position:absolute;z-index:3;top:20%;font:700 clamp(8px,.65vw,10px)/1.6 'Space Mono',monospace;letter-spacing:.2em;opacity:.63;color:#bedfe5;display:flex;align-items:center;gap:7px}
+.ff-cyber-hud--left{left:3.7%;top:20%}
+.ff-cyber-hud--right{right:3%;top:32%}
+.ff-cyber-hud i{display:inline-block;background:#ff3567;width:4px;height:4px;box-shadow:0 0 8px #ff3567;animation:ffHudBlink 2.7s ease-in-out infinite alternate}
+.ff-cyber-hud--right i{background:#0ad8e9;box-shadow:0 0 8px #0ad8e9}
+.ff-cyber-hud i:nth-child(2){animation-delay:.4s}.ff-cyber-hud i:nth-child(3){animation-delay:.8s}.ff-cyber-hud i:nth-child(4){animation-delay:1.2s}
+.ff-cyber-scan{position:absolute;inset:-80% 0;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent 47%,#35f9ff16 50%,transparent 53%);animation:ffScan 10s linear infinite}
+.ff-cyber-particles{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:.75;mix-blend-mode:screen}
+.ff-cyberpunk-art .ff-hero-figure{
+  z-index:5;top:auto;bottom:-12%;left:24%;width:54%;height:109%;object-fit:contain;object-position:center bottom;
+  filter:drop-shadow(-12px 2px 17px #f318524e) drop-shadow(12px 2px 19px #00e5f443);
+  transform:translate3d(var(--ff-portrait-x,0px),var(--ff-portrait-y,0px),0);
+  transition:filter .35s ease;
+  max-width:none;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none;
+  will-change:left,width,height,transform;
+}
+.ff-cyber-floor {
+  position:absolute;z-index:6;pointer-events:none;left:-8%;right:-8%;bottom:-12%;height:28%;
+  background:radial-gradient(ellipse at 28% 80%,#ff175a23,transparent 52%),radial-gradient(ellipse at 75% 80%,#00e5fe22,transparent 52%),
+             linear-gradient(0deg,#050810bc,transparent 79%);
+}
+/* Nome não faz parte de imagem: texto selecionável, nítido e animado. */
+.ff-hero-copy h1 {
+  position:relative;z-index:9;align-self:center;width:100%;font-weight:900;
+  font-size:clamp(65px,8.7vw,160px);line-height:.84;white-space:nowrap;
+  color:#f6f4ee;letter-spacing:-.08em;
+  text-shadow:-3px 2px 0 #f71950,4px 3px 0 #00d0df,0 12px 22px #02030bed,0 0 28px #000c;
+  -webkit-text-stroke:.4px #f9fbff6a;
+  animation:ffTitleEnter 1.2s cubic-bezier(.2,1,.2,1) both;
+}
+.ff-hero-copy h1 .ff-dot{color:#ff255c;text-shadow:0 0 24px #f82759}
+.ff-hero-copy h1 .ff-name-tail{color:inherit;}
+.ff-hero-eyebrow,.ff-copy-left,.ff-copy-right{position:relative;z-index:10;text-shadow:0 2px 7px #01040de0}
+.ff-hero-eyebrow {letter-spacing:.15em}
+.ff-hero-scroll{z-index:10}
+/* Quando a cena vira cápsula, a animação do retrato permanece independente. */
+@keyframes ffSunRed{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(23px,28px,0) scale(1.07)}}
+@keyframes ffSunCyan{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-27px,-16px,0) scale(.94)}}
+@keyframes ffGlyphRed{from{transform:translate3d(0,0,0) rotate(-21deg)}to{transform:translate3d(30px,-24px,0) rotate(-14deg)}}
+@keyframes ffGlyphCyan{from{transform:translate3d(0,0,0) rotate(17deg)}to{transform:translate3d(-25px,32px,0) rotate(8deg)}}
+@keyframes ffOutlineA{from{transform:translate3d(0,0,0) rotate(-21deg)}to{transform:translate3d(25px,18px,0) rotate(-14deg)}}
+@keyframes ffOutlineB{from{transform:translate3d(0,0,0) rotate(27deg)}to{transform:translate3d(-20px,16px,0) rotate(36deg)}}
+@keyframes ffDrawCircuit{0%{stroke-dashoffset:1300}100%{stroke-dashoffset:0}}
+@keyframes ffPulseCircuit{0%,100%{opacity:.7}50%{opacity:.33}}
+@keyframes ffScan{from{transform:translateY(-30%)}to{transform:translateY(32%)}}
+@keyframes ffHudBlink{from{opacity:.3}to{opacity:1}}
+@keyframes ffTitleEnter{from{opacity:0;filter:blur(8px);transform:translateY(45px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}
+@media(max-width:810px){
+  .ff-cyberpunk-art .ff-hero-figure{left:17%;width:67%;height:88%;bottom:-7%}
+  .ff-cyber-sun--red{left:-31%;top:-15%}.ff-cyber-sun--cyan{right:-55%;top:25%}
+  .ff-cyber-glyph--red{left:-15%;top:15%;font-size:64vw}.ff-cyber-glyph--cyan{right:-40%;bottom:-5%;font-size:62vw}
+  .ff-hero-copy h1{font-size:clamp(48px,10.8vw,88px);letter-spacing:-.085em}
+  .ff-copy-left,.ff-copy-right{top:25%}
+  .ff-cyber-hud{display:none}
+}
+@media(max-width:520px){
+  .ff-cyberpunk-art .ff-hero-figure{left:7%;width:86%;height:75%;bottom:-6%}
+  .ff-cyber-sun--red{width:350px;left:-73%;top:0}.ff-cyber-sun--cyan{width:390px;right:-93%;top:34%}
+  .ff-cyber-outline--a{width:38%;left:-16%;top:39%}.ff-cyber-outline--b{width:28%;right:-9%;top:28%}
+  .ff-cyber-outline--c{display:none}
+  .ff-cyber-glyph--red{font-size:90vw;left:-24%;top:10%}.ff-cyber-glyph--cyan{font-size:90vw;right:-36%;bottom:0}
+  .ff-hero-copy h1{font-size:clamp(34px,10.15vw,54px);margin-bottom:108px;line-height:.95;letter-spacing:-.09em;text-align:center;white-space:nowrap}
+  .ff-name-tail{display:inline!important;margin:0!important}
+  .ff-hero-eyebrow{text-align:center;font-size:8px}
+  .ff-copy-left,.ff-copy-right{top:24%;font-size:8px;max-width:44%}
+  .ff-copy-right{right:17px}.ff-copy-left{left:17px}
+  .ff-hero-cta{padding:9px 8px;font-size:7px;gap:6px}
+  .ff-cyber-floor{height:19%}
+}
+@media(prefers-reduced-motion:reduce){
+  .ff-cyberpunk-art *{animation:none!important;transition:none!important}
+  .ff-cyberpunk-art .ff-hero-figure{transform:none!important}
+  .ff-hero-copy h1{animation:none!important}
+  .ff-cyber-circuits path{stroke-dashoffset:0!important}
+  .ff-cyber-particles{display:none!important}
+}
+
+/* V7.8: correção do recorte da cápsula central no Safari/iPhone.
+   As demais cápsulas já usam border-radius:999px, mas a cena central
+   contém SVG, canvas e imagem com composição acelerada. Durante o scroll,
+   o JS atualiza o clip-path juntamente com o border-radius. */
+.ff-hero-art.ff-cyberpunk-art {
+  overflow: hidden;
+  -webkit-clip-path: inset(0px round 0px);
+  clip-path: inset(0px round 0px);
+}
